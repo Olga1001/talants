@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>talants</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+@import "header.html"
+<div class="feedback">
+    <div class="container">
+        <div class="master-top">
+            <div class="map">
+                <a href="#" class="map-expand">
+                    <img src="img/expand.svg" alt="expand" class="map-expand-img">
+                </a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1959.0888474254457!2d30.522565189110036!3d50.4481055869617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1582114660379!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="master-flex">
+            <div class="master-left">
+                <div class="master-sticky">
+                    <div class="feedback-filter">
+                        <div class="feedback-filter-top">
+                            <h2 class="title-18">Фильтр заданий </h2>
+                            <div class="feedback-filter-close"></div>
+                            <div class="select">
+                                <div class="select-item">Сегодня</div>
+                                <ul class="select-drop">
+                                    <li class="select-option"><p class="text-14">Сегодня</p></li>
+                                    <li class="select-option"><p class="text-14">Завтра</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="feedback-menu">
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link">
+                                    <span class="text-14">Все заказы</span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link">
+                                    <span class="text-14">Просмотрены</span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link active">
+                                    <span class="text-14">Оставлен отклик</span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link">
+                                    <span class="text-14">Получен ответ <span class="blue"> +4</span></span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link">
+                                    <span class="text-14">Выбрали исполнителем <span class="blue"> +2</span></span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link">
+                                    <span class="text-14">Ожидают подтверждения</span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                            <li class="feedback-list">
+                                <a href="#" class="feedback-link">
+                                    <span class="text-14">Завершены</span>
+                                    <span class="text-14">90</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="master-right">
+                <div class="feedback-block">
+                    <div class="feedback-close"></div>
+                    <p class="text">На данной странице отображены только те заказы с которыми вы взаимодействовали. Для удобства, используя фильтр слева, можно найти заказы с разными статусами, в которых вы ранее откликнулись.</p>
+                </div>
+                <div class="master-right-map">
+                    <a href="#" class="map-expand">
+                        <img src="img/expand.svg" alt="expand" class="map-expand-img">
+                    </a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1959.0888474254457!2d30.522565189110036!3d50.4481055869617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1582114660379!5m2!1sru!2sua"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="master-btns">
+                    <button class="master-btns-filter">
+                        <span class="text-14">Фильтр заданий</span>
+                        <span class="master-plus"></span>
+                    </button>
+                    <button class="master-btns-map">
+                        <span class="text-14">Карта</span>
+                        <img src="img/map-icon.svg" alt="icon map" class="master-btns-icon">
+                    </button>
+                </div>
+                <div class="sorting">
+                    <div class="sorting-left">
+                        <p class="text-14">Сортировать:</p>
+                        <div class="sorting-select">
+                            <div class="sorting-item">
+                                <p class="text-14">По дате <span class="sorting-hide"> добавления</span></p>
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.40594 7.17394L0.246292 2.01412C-0.0820933 1.68589 -0.0820933 1.15373 0.246292 0.82566C0.574386 0.497566 1.10652 0.497566 1.43459 0.82566L6.00009 5.3913L10.5654 0.825793C10.8937 0.497699 11.4257 0.497699 11.7538 0.825793C12.0821 1.15389 12.0821 1.68602 11.7538 2.01425L6.5941 7.17407C6.42998 7.33812 6.2151 7.42005 6.00011 7.42005C5.78502 7.42005 5.56999 7.33796 5.40594 7.17394Z" fill="#6C7185"/>
+                                </svg>
+                            </div>
+                            <ul class="sorting-drop">
+                                <li class="sorting-row">
+                                    <p class="text-14">Сегодня</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Вчера</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Неделя</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Месяц</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Все</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sorting-select sorting-select-status">
+                            <div class="sorting-item">
+                                <p class="text-14">По статусу <span class="sorting-hide"> заказа</span></p>
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.40594 7.17394L0.246292 2.01412C-0.0820933 1.68589 -0.0820933 1.15373 0.246292 0.82566C0.574386 0.497566 1.10652 0.497566 1.43459 0.82566L6.00009 5.3913L10.5654 0.825793C10.8937 0.497699 11.4257 0.497699 11.7538 0.825793C12.0821 1.15389 12.0821 1.68602 11.7538 2.01425L6.5941 7.17407C6.42998 7.33812 6.2151 7.42005 6.00011 7.42005C5.78502 7.42005 5.56999 7.33796 5.40594 7.17394Z" fill="#6C7185"/>
+                                </svg>
+                            </div>
+                            <ul class="sorting-drop">
+                                <li class="sorting-row">
+                                    <p class="text-14">Просмотрены</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Оставлен отклик</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Заказ с Вашим участием</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Не определен </p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Получен ответ <span class="blue">+4</span></p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14 blue">Выбрали исполнителем +2</p>
+                                    <p class="text-14 blue">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">На выполнении</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Выполнены</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Ожидают подтверждения</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                                <li class="sorting-row">
+                                    <p class="text-14">Завершены</p>
+                                    <p class="text-14">90</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="sorting-search">
+                        <input type="text" class="sorting-search-input" placeholder="Поиск задания...">
+                        <button type="button" class="sorting-search-btn">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.8689 14.235L11.2237 10.5898C12.2015 9.46563 12.7935 7.99889 12.7935 6.39579C12.7935 2.86696 9.92324 0 6.39774 0C2.86892 0 0.00195312 2.87029 0.00195312 6.39579C0.00195312 9.92129 2.87224 12.7916 6.39774 12.7916C8.00084 12.7916 9.46759 12.1996 10.5918 11.2217L14.237 14.867C14.3235 14.9534 14.4399 15 14.5529 15C14.666 15 14.7824 14.9568 14.8689 14.867C15.0419 14.694 15.0419 14.408 14.8689 14.235ZM0.896632 6.39579C0.896632 3.36253 3.36448 0.898004 6.39441 0.898004C9.42767 0.898004 11.8922 3.36585 11.8922 6.39579C11.8922 9.42572 9.42767 11.8969 6.39441 11.8969C3.36448 11.8969 0.896632 9.42905 0.896632 6.39579Z" fill="#6C7185"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="master-content">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Не определен </div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Ожидают потверждения</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора <img src="img/suitcase.svg" alt="suitcase" class="card-suitcase"></h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Завершен</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Не определен </div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Ожидают потверждения</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Завершен</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Не определен </div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Ожидают потверждения</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Завершен</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Не определен </div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Ожидают потверждения</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-gray">Завершен</div>
+                            <div class="card-mob">
+                                <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-mob-img">
+                                <div class="card-top">
+                                    <div class="card-name">
+                                        <p class="text">Ирина <span class="card-status"></span></p>
+                                    </div>
+                                    <h2 class="title-18">Прочистить раковину в ванной комнате от засора</h2>
+                                    <div class="card-position">
+                                        <p class="card-price">10 500 р.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-mid">
+                                <div class="card-row">
+                                    <div class="card-row-left">
+                                        <img src="img/sample-reviews-avatar.jpg" alt="foto" class="card-img">
+                                        <div class="card-col">
+                                            <p class="text">Ирина <span class="card-status"></span></p>
+                                            <p class="masters-gray">
+                                                Отзывы: <span class="green"> +7 </span> / 0 / <span class="orange"> -1 </span>
+                                            </p>
+                                            <p class="masters-gray">Откликов: <span class="card-span">12</span></p>
+                                            <p class="masters-gray">Просмотров: <span class="card-span">49</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-col">
+                                        <p class="masters-gray">Статус:  <span class="card-span">Открыто 12 минут назад</span></p>
+                                        <p class="masters-gray">Раздел: <span class="card-span">Сантехника</span></p>
+                                        <p class="masters-gray">Выполнение: <span class="card-span_red">6ч. 20мин.</span></p>
+                                    </div>
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                                <p class="text-14">В новой квартире необходимо собрать мебель Икеа: Диван Gimmarp, Диван Lycksele , Тумба под ТВ , журнальный столик , стол обеденный (простая конструкция) , 3 стула , Возможно еще по мелочи (на вскидку не помню) .</p>
+                                <div class="card-mob-btn">
+                                    <a href="#" class="btn-orange">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="card-bottom-row">
+                                    <p class="text-14 blue">Сантехника</p>
+                                    <div class="card-location">
+                                        <div class="card-location-item">
+                                            <img src="img/map.svg" alt="location" class="card-location-icon">
+                                            <p class="text-14">г. Реутов, р-н Новогирева, ул. сталерова, 28</p>
+                                        </div>
+                                        <a href="#" class="text-small">Показать на карте</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.825817 5.40594L5.98564 0.246292C6.31387 -0.0820933 6.84603 -0.0820933 7.1741 0.246292C7.50219 0.574386 7.50219 1.10652 7.1741 1.43459L2.60845 6.00009L7.17396 10.5654C7.50206 10.8937 7.50206 11.4257 7.17396 11.7538C6.84587 12.0821 6.31373 12.0821 5.9855 11.7538L0.825685 6.5941C0.661637 6.42998 0.579707 6.2151 0.579707 6.00011C0.579707 5.78502 0.661797 5.56999 0.825817 5.40594Z" fill="#6C7185"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.17418 6.59406L2.01436 11.7537C1.68614 12.0821 1.15397 12.0821 0.825905 11.7537C0.49781 11.4256 0.49781 10.8935 0.825905 10.5654L5.39155 5.99991L0.826037 1.43457C0.497943 1.10635 0.497943 0.574263 0.826037 0.24617C1.15413 -0.0820565 1.68627 -0.0820565 2.0145 0.24617L7.17432 5.4059C7.33836 5.57002 7.42029 5.7849 7.42029 5.99989C7.42029 6.21498 7.3382 6.43001 7.17418 6.59406Z" fill="#6C7185"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+@import "footer.html"
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bodyScrollLock.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

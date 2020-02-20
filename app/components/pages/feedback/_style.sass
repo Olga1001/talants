@@ -1,0 +1,115 @@
+.feedback
+  padding: 30px 0 60px
+  &-filter
+    @include container
+    position: relative
+    &-close
+      display: none
+      position: absolute
+      right: 0
+      top: 0
+      width: 32px
+      height: 40px
+      cursor: pointer
+      &:before, &:after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%) rotate(45deg)
+        background: #ffffff
+        width: 12px
+        height: 1px
+      &:after
+        width: 1px
+        height: 12px
+    &-top
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      padding: 10px 20px
+      justify-content: space-between
+      border-bottom: 1px solid #F6F6F6
+    .select
+      box-shadow: none
+      &-item
+        background: #F5F6FA
+        border-radius: 5px
+      .select-drop
+        border-top: 1px solid #ffffff
+        background: #F5F6FA
+        border-radius: 0 0 5px 5px
+        box-shadow: none
+  &-menu
+    padding: 10px 0
+  &-link
+    display: flex
+    justify-content: space-between
+    padding: 10px 20px
+    position: relative
+    .text-14
+      transition: all 0.3s ease
+      &:first-child
+        color: #6C7185
+    &:before
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 0
+      height: 0
+      border: 8px solid #F5F6FA
+      border-left: 8px solid transparent
+      border-top: 8px solid transparent
+      border-bottom: 8px solid transparent
+      transition: all 0.3s ease
+    &:hover
+      .text-14
+        color: #4880FF
+    &.active
+      background: #4880FF
+      .text-14
+        color: #ffffff
+      &:before
+        content: ''
+  &-block
+    padding: 18px 53px
+    background: linear-gradient(128.44deg, #4880FF 0.21%, #6694FE 100%)
+    box-shadow: 0px 0px 20px rgba(72, 128, 255, 0.5)
+    border-radius: 5px
+    position: relative
+    margin-bottom: 20px
+    .text
+      text-align: center
+      color: #FFFFFF
+  &-close
+    position: absolute
+    top: 0
+    right: 0
+    cursor: pointer
+    width: 40px
+    height: 40px
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      width: 10px
+      height: 1px
+      transform: translate(-50%,-50%) rotate(45deg)
+      background: #FFFFFF
+    &:after
+      height: 10px
+      width: 1px
+.card-gray
+  position: absolute
+  left: 0
+  top: 0
+  background: #6C7185
+  border-radius: 5px 0px 0px 0px
+  padding: 1px 20px 2px
+  font-family: "SegoeUI", sans-serif
+  font-size: 12px
+  line-height: 1
+  color: #FFFFFF
+
