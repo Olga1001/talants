@@ -1,0 +1,439 @@
+.advantages
+  &-mob
+    display: none
+  &-item
+    margin-top: 30px
+    text-align: center
+    .text
+      margin: 5px 0 0 0
+      padding: 0 16px
+  &-img
+    width: 90px
+    height: 90px
+    margin: 0 auto 10px
+  &-link
+    background: url("../img/dashed-gray-little.svg") no-repeat center / 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    @include normal-text
+    text-decoration-line: underline
+    color: #6C7185
+    width: 100%
+    padding: 10px 0
+    margin-top: 30px
+    height: 49px
+    .questions-icon
+      margin: 0 5px 0 0
+.banner
+  position: relative
+  .btn-orange
+    margin: 15px 0 0 0
+  &-input
+    display: none
+  &-block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(61, 64, 76, 0.7)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .text
+      color: #ffffff
+      font-family: "SegoeUI-SemiBold", sans-serif
+    .text-14
+      color: #FFFFFF
+      margin-top: 10px
+.forcustomer
+  padding-bottom: 60px
+  overflow: hidden
+  &-add
+    @include container
+    margin-bottom: 30px
+    padding: 20px 10px 10px
+    display: none
+    .title-18
+      border: none
+      padding: 0
+    .text-14
+      text-align: center
+      color: #6C7185
+    .btn-orange
+      min-width: 150px
+  &-link
+    color: #F61C0D
+  &-input
+    @include container
+    padding: 8px 10px
+    width: 100%
+    margin-top: 20px
+    font-size: 14px
+    line-height: 19px
+    color: #6C7185
+    font-family: "SegoeUI", sans-serif
+    &::-webkit-input-placeholder
+      font-size: 14px
+      line-height: 19px
+      color: #6C7185
+    &:-moz-placeholder
+      font-size: 14px
+      line-height: 19px
+      color: #6C7185
+    &::-moz-placeholder
+      font-size: 14px
+      line-height: 19px
+      color: #6C7185
+    &:-ms-input-placeholder
+      font-size: 14px
+      color: #6C7185
+      line-height: 19px
+  .video
+    height: 153px
+  .customer-star
+    padding-bottom: 18px
+  &-busy
+    background: none
+    padding: 0
+    margin: 2px 0
+    position: relative
+    cursor: pointer
+    .text-14
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      cursor: pointer
+      span
+        color: #FF855F
+        margin-right: 5px
+        position: relative
+        z-index: 2
+        &.green
+          color: #33C093
+        &.red
+          color: #FF855F
+    &-arrow
+      width: 11px
+      height: 17px
+      margin-right: -16px
+    &-drop
+      z-index: 1
+      position: absolute
+      left: 50%
+      top: -3px
+      transform: translateX(-50%)
+      width: fit-content
+      background: #FFFFFF
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+      padding: 25px 13px 5px 13px
+      min-width: 96px
+      opacity: 0
+      pointer-events: none
+      transition: all 0.2s ease
+      p
+        text-align: center
+        @include normal-text
+        color: #3D404C
+        &:hover
+          color: #4880FF
+    &.active
+      .forcustomer-busy-drop
+        opacity: 1
+        pointer-events: auto
+        span, p
+          &:hover
+            color: #4880FF
+      .text-14 span
+        color: #3D404C
+        &:hover
+          color: #4880FF
+
+  &-top
+    display: flex
+    width: 100%
+    border-bottom: 1px solid #E9E9E9
+    margin-bottom: 30px
+    margin-top: 21px
+  &-tab
+    padding: 9px 0
+    display: block
+    margin-right: 40px
+    position: relative
+    @include text
+    font-family: "SegoeUI", sans-serif
+    color: #3D404C
+    &:last-child
+      margin-right: 0
+    &:before
+      content: none
+      position: absolute
+      left: 50%
+      bottom: 4px
+      transform: translateX(-50%)
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background: #4880FF
+    &.active
+      color: #4880FF
+      &:before
+        content: ''
+  .customer-img
+    border-radius: 50%
+    overflow: hidden
+    width: 180px
+    height: 180px
+  &-service
+    @include container
+    padding-top: 7px
+    margin-bottom: 30px
+    position: relative
+  &-ul
+    padding: 10px 20px 0
+  &-li
+    border-bottom: 1px solid #F5F6FA
+    padding: 10px 0 10px 0
+    &:last-child
+      border: none
+      padding: 10px 0 20px 0
+    .text
+      display: flex
+      align-items: center
+      font-family: "SegoeUI-SemiBold", sans-serif
+    span
+      color: #6C7185
+  &-left
+    width: calc(100% - 270px)
+    padding-right: 30px
+    div
+      &:hover
+        .customer-edit
+          opacity: 1
+
+  &-right
+    width: 270px
+    div, form, a.video
+      &:hover
+        .customer-edit
+          opacity: 1
+  &-row
+    display: flex
+    justify-content: space-between
+    margin-top: 10px
+    .text-14
+      color: #6C7185
+      transition: all 0.3s ease
+      max-width: 215px
+      &:last-child
+        white-space: nowrap
+        margin-left: 10px
+    &:hover
+      color: #3D404C
+  &-more
+    color: #6C7185
+    text-decoration: underline
+    display: block
+    text-align: center
+    padding: 10px 10px 0 10px
+    width: 100%
+    &-drop
+      display: none
+      height: 100%
+    &-flex
+      display: flex
+      flex-wrap: wrap
+  &-icon
+    height: 18px
+    width: 18px
+    margin-right: 6px
+  &-info
+    margin-bottom: 30px
+    @include container
+    padding-bottom: 20px
+    position: relative
+    &-top
+      border-bottom: 1px solid #F5F6FA
+      padding: 20px 20px 0 20px
+    &-row
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+    &-content
+      padding: 20px 20px 0 20px
+      position: relative
+      height: 211px
+      overflow: hidden
+      transition: height 0.3s ease
+      &.active
+        height: 100%
+        &:before
+          content: none
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 70px
+        width: 100%
+        background: linear-gradient(to top, rgba(#ffffff, 1), rgba(#ffffff, 0.8), rgba(#ffffff, 0.2))
+      .text
+        margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+  &-text
+    &-left
+      color: #6C7185
+  .forcustomer-more-flex
+    .sample-reviews__img
+      &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3)
+        margin-bottom: 0
+
+  &-portfolio
+    @include container
+    padding-bottom: 20px
+    position: relative
+    &:hover
+      .customer-edit
+        opacity: 1
+    .forcustomer-more
+      padding: 0
+      margin-top: -5px
+    .gallery
+      display: flex
+      flex-wrap: wrap
+      padding: 20px 20px 0 20px
+      &-span
+        position: absolute
+        @include normal-text
+        color: #ffffff
+        background: #4880FF
+        padding: 4px 10px 5px
+        left: -10px
+        bottom: 10px
+        z-index: 1
+        &:before
+          content: ''
+          position: absolute
+          bottom: 100%
+          left: 0
+          width: 0
+          height: 0
+          border: 5px solid #6292FE
+          border-left: 5px solid transparent
+          border-top: 5px solid transparent
+  .video
+    margin: 0 0 30px
+    border-radius: 5px
+    overflow: hidden
+    &:before
+      background: rgba(61, 64, 76, 0.69)
+    &:hover
+      &:before
+        background: rgba(61, 64, 76, 0.9)
+    .customer-edit
+      color: #FFFFFF
+      &:before
+        background: #ffffff
+  &-awards
+    position: relative
+    @include container
+    margin-bottom: 30px
+    &-top
+      padding: 10px
+      border-bottom: 1px solid #F5F6FA
+      display: flex
+      align-items: center
+      justify-content: space-between
+      .text
+        font-family: "SegoeUI-SemiBold", sans-serif
+    &-slider
+      padding: 20px 0 20px 20px
+    .slick-slide
+      width: 100px
+      margin-right: 10px
+      padding: 0
+      position: relative
+      height: 140px
+      overflow: hidden
+      &:hover .forcustomer-awards-span
+        visibility: visible
+        opacity: 1
+    &-span
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      visibility: hidden
+      opacity: 0
+      width: 100%
+      height: 100%
+      background: rgba(61,64,76,.7) url("data:image/svg+xml;charset=utf-8,%3Csvg width='27' height='27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.764 25.623l-6.561-6.561a11.466 11.466 0 002.826-7.55C23.029 5.161 17.862 0 11.516 0 5.164 0 .004 5.167.004 11.512c0 6.346 5.166 11.513 11.512 11.513 2.886 0 5.526-1.066 7.55-2.826l6.561 6.561c.156.156.365.24.569.24a.81.81 0 00.569-1.377zm-25.15-14.11c0-5.46 4.442-9.897 9.896-9.897 5.46 0 9.896 4.443 9.896 9.896 0 5.454-4.436 9.902-9.896 9.902-5.454 0-9.896-4.442-9.896-9.902z' fill='%23fff'/%3E%3C/svg%3E") no-repeat 50%
+      transition: visibility .25s ease-in-out, opacity .25s ease-in-out
+    .slick-arrow
+      width: 20px
+      height: 20px
+      padding: 5px
+      background-color: none
+    &-btns
+      display: flex
+      align-items: center
+    &-arrow
+      padding: 5px
+      position: inherit
+      margin: 0
+      svg
+        width: 10px
+        height: 15px
+      &:hover
+        background: none
+        path
+          fill: #4880FF
+  .customer-saved
+    margin-top: 30px
+    padding-bottom: 10px
+    .btn-orange
+      display: block
+      margin: 10px auto
+  .customer-saved-user
+    width: calc(33.33% - 17px)
+    &:nth-child(3n+3)
+      margin-right: 0
+    &:first-child, &:nth-child(3n+1)
+      .customer-tooltip
+        left: 0
+        right: auto
+        &:before
+          right: auto
+          left: 24px
+  .customer-left
+    .btn-orange
+      margin: 31px auto 10px
+  &-questions
+    @include normal-text
+    color: #6C7185
+    text-align: center
+    padding-bottom: 10px
+    width: 100%
+    display: block
+  &-verified
+    display: none
+    @include container
+    margin-bottom: 30px
+.forcustomer-portfolio .sample-reviews__img
+  width: calc(33.33% - 17px)
+  height: 160px
+  margin-right: 25px
+  margin-bottom: 25px
+  img
+    object-fit: cover
+  &:nth-child(3n+3)
+    margin-right: 0
+.up-green, .down-gray
+  width: 8px
+  height: 12px
+  margin: 0 4px 0 12px
+

@@ -1,0 +1,713 @@
+.notifications
+  min-height: calc(100vh - 196px - 60px)
+  &-item
+    width: calc(100% - 300px)
+    margin-left: 30px
+    @include container
+    padding-bottom: 5px
+    height: fit-content
+  &-top
+    padding: 16px 30px 16px 20px
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    border-bottom: 1px solid #F5F6FA
+    &-row
+      display: flex
+      align-items: center
+      justify-content: center
+    .text
+      font-family: "SegoeUI-SemiBold", sans-serif
+  &-left
+    width: 50%
+  &-li
+    margin-bottom: 15px
+    padding: 0 30px 0 20px
+    display: flex
+    align-items: flex-start
+    .text
+      width: 50%
+  &-icon
+    width: 15px
+    height: 15px
+    margin-right: 4px
+  .settings-label, .notifications-top-row
+    padding: 0
+    width: 16.66%
+  .settings-checkbox
+    margin: 0 auto
+    width: 100%
+    .check
+      pointer-events: none
+.settings
+  max-width: 270px
+  width: 100%
+  height: fit-content
+  @include container
+  overflow: hidden
+  &-item
+    width: calc(100% - 300px)
+    margin-left: 30px
+    padding-bottom: 5px
+    height: fit-content
+  &-flex
+    display: flex
+    flex-wrap: wrap
+    padding: 30px 0 60px
+  &-tab
+    border-bottom: 1px solid #F5F6FA
+    &:last-child
+      border: none
+    .text
+      padding: 19px 10px 20px
+      display: block
+      transition: all 0.3s ease
+      position: relative
+      &:before
+        content: none
+        position: absolute
+        right: 0
+        top: 50%
+        width: 0
+        height: 0
+        transform: translateY(-50%)
+        transition: all 0.3s ease
+        border: 10px solid #F5F6FA
+        border-left: 10px solid transparent
+        border-top: 10px solid transparent
+        border-bottom: 10px solid transparent
+      &:hover, &.active
+        background: #4880FF
+        color: #ffffff
+        &:before
+          content: ''
+.finance
+  .container
+    position: relative
+  &-tariff
+    .title-18
+      padding: 15px 25px
+      text-align: center
+      border-bottom: 1px solid #F5F6FA
+    &-bottom
+      padding: 25px 20px 30px
+      .text-14
+        text-align: center
+  &-row
+    display: flex
+    flex-wrap: wrap
+    padding: 0 30px
+  &-balance
+    padding: 20px
+    .title-18
+      margin-bottom: 13px
+  &-popular
+    .title-18
+      padding: 10px 10px 11px
+      text-align: center
+      border-bottom: 1px solid #F5F6FA
+  &-feedback
+    padding-bottom: 20px
+    .btn-orange
+      margin: 5px auto 0
+      display: block
+    &-top
+      background: #6C7185
+      border-radius: 5px 5px 0px 0px
+      display: flex
+      justify-content: space-between
+      padding: 14px 20px
+    &-desktop
+      .text, .text-14
+        padding: 0 30px 0 0
+        color: #ffffff
+        width: 100%
+        &:first-child
+          width: 343px
+        &:nth-child(2)
+          max-width: 174px
+        &:nth-child(3)
+          max-width: 184px
+        &:last-child
+          max-width: 129px
+          padding: 0
+    &-table
+      padding: 0 20px
+    &-col
+      padding: 15px 0
+      border-bottom: 1px solid #ECEEF7
+      &:last-child
+        border: none
+    &-main
+      font-family: "SegoeUI-SemiBold", sans-serif
+    &-row
+      margin-top: 10px
+      display: flex
+      justify-content: space-between
+    .text-14
+      color: #6C7185
+    &-last
+      border: none
+    &-mob
+      display: none
+      .text-small
+        @include small-text
+        display: flex
+        align-items: center
+    &-i
+      width: 10px
+      height: 10px
+      margin: 0 5px
+    &-box
+      position: relative
+      width: fit-content
+      margin-left: 20px
+    &-input
+      width: 39px
+      padding: 0
+      text-align: center
+      line-height: 23px
+      background: #ECEEF7
+      border-radius: 5px
+      font-size: 14px
+      font-family: "SegoeUI", sans-serif
+    &-green
+      background: #33C093
+      width: 12px
+      height: 12px
+      color: #ffffff
+      font-size: 6px
+      border-radius: 50%
+      line-height: 12px
+      position: absolute
+      right: -3px
+      top: -4px
+      padding-left: 1px
+    &-item
+      display: flex
+      align-items: center
+      padding: 0 20px
+      width: 50%
+      flex-wrap: wrap
+      &:first-child
+        border-right: 1px solid #ECEEF7
+    &-bottom
+      border-top: 0.5px solid #ECEEF7
+      padding: 10px 20px
+      display: flex
+      .text-small
+        color: #6C7185
+        margin-right: 10px
+      .text-14
+        font-family: "SegoeUI-SemiBold", sans-serif
+  section
+    @include container
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+
+.tariff
+  position: relative
+  width: calc(25% - 23px)
+  margin: 25px 30px 0 0
+  height: 200px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(95.35deg, #4880FF 0.21%, #6694FE 100%)
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25)
+    border-radius: 5px
+    z-index: 1
+    transition: all 0.3s ease
+  &-card
+    position: relative
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    transition: all 0.3s ease
+    z-index: 2
+    min-height: 200px
+  &.active
+    &:before
+      height: 243px
+    .tariff-btn
+      opacity: 1
+      pointer-events: auto
+      transform: translateY(0)
+  span
+    font-family: "SegoeUI-SemiBold", sans-serif
+  p
+    color: #ffffff
+  &:nth-child(4n+4)
+    margin-right: 0
+  &-top
+    position: relative
+    padding: 10px
+    border-bottom: 0.5px solid rgba(#FFFFFF, 0.2)
+    .text-14
+      text-align: center
+  &-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
+    position: relative
+    min-height: 101px
+    .text-22
+      margin-bottom: 3px
+  &-bottom
+    padding: 0 10px 5px
+    .text-small
+      padding: 5px 0
+      border-top: 0.5px solid rgba(#FFFFFF, 0.2)
+      text-align: left
+  &-text
+    padding: 25px 20px 30px
+    text-align: center
+    .blue
+      text-decoration: underline
+  &-base
+    p
+      color: #6C7185
+    p.tariff-top, p.text-22
+      color: #3D404C
+    .tariff-top
+      border-bottom: 0.5px solid rgba(#6C7185, 0.2)
+    .tariff-bottom .text-small
+      border-top: 0.5px solid rgba(#6C7185, 0.2)
+    &:before
+      background:  #F5F6FA
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+  &-stock
+    position: absolute
+    right: 0
+    top: 10px
+    background: #FFC501
+    border-radius: 5px 0px 0px 5px
+    font-family: "SegoeUI-Bold", sans-serif
+    color: #3D404C
+    @include normal-text
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 44px
+    height: 22px
+  &-popular
+    font-family: "SegoeUI-SemiBold", sans-serif
+    color: #3D404C
+    @include small-text
+    background: #FFC501
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    position: absolute
+    right: -5px
+    top: -13px
+    padding: 3px 10px 5px
+  &-btn
+    width: 100%
+    padding: 0 10px 10px
+    z-index: 2
+    position: relative
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease-in
+    transform: translateY(-20px)
+    .btn-orange
+      margin: 0
+      min-width: 100%
+      padding: 0
+.category
+  padding: 0 20px
+  display: none
+  &-box
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+  .blue
+    text-align: center
+    width: 100%
+    padding: 20px
+  &-top
+    display: flex
+    background: #F5F6FA
+    border-radius: 5px
+    padding: 10px
+    margin-bottom: 10px
+    .text-14
+      color: #6C7185
+      &:first-child
+        width: calc(100% - 140px - 97px - 80px)
+      &:nth-child(2)
+        width: 140px
+        margin: 0 40px
+      &:nth-child(3)
+        width: 97px
+        text-align: center
+  &-accordion, &-item
+    display: flex
+    align-items: center
+  &-accordion
+    padding: 10px
+    transition: all 0.3s ease
+    box-sizing: border-box
+    //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+    position: relative
+    z-index: 1
+    background: #F5F6FA
+    cursor: pointer
+    &-col
+      display: flex
+      width: calc(100% - 97px)
+      .category-item
+        &:first-child
+          width: calc(100% - 140px - 80px)
+        &:nth-child(2)
+          width: 140px
+          margin: 0 40px
+          .text
+            text-align: right
+            width: 100%
+    &.active
+      background: #FFFFFF
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+      border-radius: 5px 5px 0px 0px
+      .category-arrow
+        transform: scale(1,-1)
+  &-row
+    border-bottom: 1px solid #FFFFFF
+    background: #F5F6FA
+    overflow: hidden
+    //box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+    &:last-child
+      border: none
+    &:nth-child(2)
+      border-radius: 5px 5px 0 0
+    &:last-child
+      border-radius: 0 0 5px 5px
+  &-item
+    width: 97px
+  &-arrow
+    width: 12px
+    margin-right: 12px
+    transition: all 0.3s ease
+  &-btn
+    border: 2px solid #FFC501
+    box-sizing: border-box
+    border-radius: 100px
+    line-height: 29px
+    width: 100%
+    font-family: "SegoeUI", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    text-align: center
+    color: #FFC501
+    transition: all 0.3s ease
+    position: relative
+    &:hover, &.active
+      background: #FFC501
+      color: #3D404C
+    &.active
+      &.cancel, &:hover
+        &:before
+          opacity: 1
+          pointer-events: auto
+    &:before
+      content: 'Отмена'
+      position: absolute
+      left: -2px
+      top: -2px
+      width: calc(100% + 4px)
+      height: calc(100% + 4px)
+      background: #FF855F
+      border-radius: 100px
+      font-family: "SegoeUI", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 34px
+      text-align: center
+      color: #FFFFFF
+      opacity: 0
+      pointer-events: none
+      transition: all 0.3s ease
+
+  &-drop
+    display: none
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+    position: relative
+    z-index: 1
+    &-item
+      display: flex
+      align-items: center
+      padding: 10px
+      background: #FFFFFF
+      border: 1px solid transparent
+      border-bottom: 1px solid #F2F2F2
+      box-shadow: none
+      &:last-child
+        border-color: transparent
+      .text-14
+        color: #6C7185
+        padding-left: 24px
+      &:hover
+        border: 1px solid #FFC501
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1)
+        position: relative
+        z-index: 2
+
+.balance
+  margin-bottom: 20px
+  display: flex
+  &:last-child
+    margin-bottom: 0
+  &-left
+    display: flex
+    align-items: center
+    max-width: 280px
+    width: 100%
+    justify-content: space-between
+  &-input
+    border-radius: 5px
+    line-height: 35px
+    padding: 0 25px 0 10px
+    width: 100px
+    background: #F5F6FA url("../img/XMLID449.svg") no-repeat right 5px center / 10px 100%
+    color: #6C7185
+    font-size: 16px
+    font-family: "ProximaNova-Regular", sans-serif
+  &-select
+    margin: 0 30px
+    background: #F5F6FA
+    border-radius: 5px
+    max-width: 290px
+    width: 100%
+    position: relative
+    &-item
+      cursor: pointer
+      display: flex
+      align-items: flex-end
+      justify-content: space-between
+      padding: 8px 10px
+      .text-14
+        color: #6C7185
+    &.active
+      .balance-arrow
+        transform: scale(1,-1)
+      .balance-drop
+        z-index: 3
+        opacity: 1
+        pointer-events: auto
+
+  &-arrow
+    width: 14px
+    height: 14px
+    margin-left: 15px
+    transition: all 0.3s ease
+    &.active
+      transform: scale(1,-1)
+  &-drop
+    background: #F5F6FA
+    border-top: 1px solid #FFFFFF
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    padding: 0 10px 15px 10px
+    border-radius: 0 0 5px 5px
+    //display: none
+    z-index: 2
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease
+    img
+      width: 18px
+  &-yandex
+    height: 12px
+  &-mastercard
+    height: 17px
+  &-webmoney
+    height: 14px
+  &-qiwi
+    height: 18px
+  &-list
+    display: flex
+    align-items: center
+    margin-top: 15px
+    cursor: pointer
+    .text-14
+      padding: 0 10px
+      margin: 0 8px
+      line-height: 1
+      border-left: 0.5px solid rgba(#BDBDBD, 0.5)
+      transition: all 0.3s ease
+    &:hover
+      .text-14
+        color: #4880FF
+  .btn-orange
+    margin: 0
+
+.history
+  @include container
+  margin-bottom: 30px
+  overflow: hidden
+  &-top
+    display: flex
+    justify-content: space-between
+    padding: 20px 20px 10px 20px
+    &-left
+      display: flex
+      align-items: center
+
+  .filter
+    margin: 0 10px
+  .select
+    box-shadow: none
+    min-width: auto
+    width: 167px
+    .select-item, .select-drop
+      background: #F5F6FA
+      border-radius: 5px
+    .select-drop
+      border-top: 1px solid #ffffff
+      border-radius: 0 0 5px 5px
+      box-shadow: none
+  &-ul
+    padding-bottom: 10px
+    a
+      padding: 10px 20px 0 20px
+      font-family: "SegoeUI", sans-serif
+      color: #3D404C
+      cursor: pointer
+      @include normal-text
+      display: block
+      text-decoration: underline
+  &-row
+    display: flex
+    width: 100%
+    justify-content: space-between
+    &-item
+      display: contents
+      &:first-child
+        .text
+          &:first-child
+            width: 200px
+          &:nth-child(2)
+            width: 400px
+      &:last-child
+        .text
+          &:first-child
+            width: 151px
+          &:nth-child(2)
+            width: 120px
+  &-li
+    padding: 5px 0
+    width: 100%
+    .text
+      color: #6C7185
+      padding: 0 20px
+  &-main
+    background: #6C7185
+    padding: 4px 0 5px
+    .text
+      color: #FFFFFF
+      padding: 0 20px
+    &-mob
+      display: none
+      justify-content: space-between
+      padding: 0 30px 0 10px
+      .text-small
+        color: #ffffff
+.popular
+  padding: 10px 0
+  &-item
+    display: flex
+    padding: 8px 20px
+    cursor: pointer
+    .text
+      font-family: "SegoeUI-SemiBold", sans-serif
+  &-plus
+    width: 16px
+    height: 16px
+    margin-right: 10px
+    position: relative
+    margin-top: 3px
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      height: 1px
+      width: 100%
+      background: #4880FF
+      transform: translate(-50%, -50%)
+      transition: all 0.3s ease
+    &:after
+      height: 100%
+      width: 1px
+    &.active
+      &:after
+        transform: translate(-50%, -50%) rotate(90deg)
+  &-drop
+    padding: 0 20px 8px 46px
+    display: none
+    .text-14
+      color: #6C7185
+.basket
+  position: fixed
+  right: 0
+  bottom: 0
+  width: fit-content
+  overflow: hidden
+  @include container
+  z-index: 5
+  min-width: 270px
+  border-radius: 5px 5px 0 0
+  .text
+    background: #F5F6FA
+    padding: 10px
+    text-align: center
+  &-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    .btn-orange
+      margin: 0
+      min-width: fit-content
+      padding: 0 18px
+      font-size: 16px
+  &-block
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1)
+    width: 35px
+    height: 35px
+    padding: 0 0 0 6px
+  &-img
+    width: 18px
+  &-bottom
+    padding: 10px
+    border-top: 0.5px solid #ECEEF7
+    &-row
+      display: flex
+      align-items: center
+      justify-content: center
+    .text-small
+      color: #6C7185
+    .blue
+      text-decoration: underline
+      margin: 5px auto 0
+      display: block
+      text-align: center
+  &-alert
+    width: 12px
+    height: 12px
+    margin-right: 5px
+

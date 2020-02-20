@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<!--for="your-files"-->
+<body>
+	@import "header.html"
+	<div class="forcustomer">
+		<div class="banner">
+			<img src="img/city-bg.jpg" alt="city" class="customer-bg">
+			<div class="banner-block">
+				<p class="text">Загрузите изображения баннера</p>
+				<p class="text-14">Оптимальные размеры 1920 х 220 px </p>
+				<label class="banner-label">
+					<input type="file" class="banner-input" id="your-files" name="files[]" multiple="" value="" accept="image/jpeg,image/jpg,image/png,image/gif">
+					<span class="btn-orange">Загрузить изображение</span>
+				</label>
+			</div>
+		</div>
+		<div class="container">
+			<div class="customer-main">
+				<div class="customer-left">
+					<div class="customer-sticky">
+						<a href="#" class="customer-edit">Редактировать</a>
+						<img src="img/foto2.jpg" alt="foto" class="customer-img">
+						<h2 class="title-18">Ирина Долина <span class="circle-red"></span></h2>
+						<p class="text-14">был 5 минут назад</p>
+						<div class="forcustomer-busy">
+							<p class="text-14"><span>Занят</span> <img src="img/arrow-select.svg" alt="arrow" class="forcustomer-busy-arrow"></p>
+							<div class="forcustomer-busy-drop">
+								<p>Свободен</p>
+							</div>
+						</div>
+						<div class="customer-star">
+							<div class="customer-star-item">
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+							<div class="customer-star-number">8.7</div>
+						</div>
+						<div class="customer-info">
+							<div class="customer-info-item">
+								<span class="customer-tooltip">Так выглядит подсказка</span>
+								<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.578 15.264C3.39267 15.264 1.74267 14.4647 0.628 12.866L1.464 12.03C2.44667 13.4233 3.818 14.12 5.578 14.12C6.634 14.12 7.50667 13.7827 8.196 13.108C8.9 12.4333 9.252 11.59 9.252 10.578C9.252 9.478 8.90733 8.60533 8.218 7.96C7.54333 7.31467 6.67067 6.992 5.6 6.992C4.26533 6.992 3.07733 7.46867 2.036 8.422L1.09 8.026V0.325999H9.56V1.47H2.344V7.212C3.28267 6.30267 4.44867 5.848 5.842 5.848C7.14733 5.848 8.25467 6.266 9.164 7.102C10.0733 7.92333 10.528 9.06733 10.528 10.534C10.528 11.9567 10.0513 13.1007 9.098 13.966C8.14467 14.8313 6.97133 15.264 5.578 15.264ZM21.0007 14.582C20.282 15.0367 19.4534 15.264 18.5147 15.264C17.576 15.264 16.74 15.0367 16.0067 14.582C15.2734 14.1273 14.7014 13.526 14.2907 12.778C13.8947 12.0153 13.594 11.2087 13.3887 10.358C13.1834 9.49267 13.0807 8.598 13.0807 7.674C13.0807 6.75 13.1834 5.86267 13.3887 5.012C13.594 4.14667 13.8947 3.34 14.2907 2.592C14.7014 1.844 15.266 1.24267 15.9847 0.787999C16.718 0.333332 17.5614 0.105999 18.5147 0.105999C19.4534 0.105999 20.282 0.333332 21.0007 0.787999C21.7194 1.24267 22.284 1.844 22.6947 2.592C23.1054 3.34 23.4134 4.14667 23.6187 5.012C23.824 5.86267 23.9267 6.75 23.9267 7.674C23.9267 8.58333 23.824 9.47067 23.6187 10.336C23.4134 11.2013 23.1054 12.0153 22.6947 12.778C22.284 13.526 21.7194 14.1273 21.0007 14.582ZM18.5147 14.12C19.248 14.12 19.886 13.9293 20.4287 13.548C20.986 13.1667 21.4114 12.6607 21.7047 12.03C22.0127 11.3847 22.2327 10.7027 22.3647 9.984C22.5114 9.25067 22.5847 8.48067 22.5847 7.674C22.5847 6.86733 22.5114 6.10467 22.3647 5.386C22.2327 4.65267 22.0127 3.97067 21.7047 3.34C21.4114 2.69467 20.986 2.18867 20.4287 1.822C19.886 1.44067 19.248 1.25 18.5147 1.25C17.7667 1.25 17.114 1.44067 16.5567 1.822C16.014 2.18867 15.5887 2.69467 15.2807 3.34C14.9874 3.97067 14.7674 4.65267 14.6207 5.386C14.474 6.10467 14.4007 6.86733 14.4007 7.674C14.4007 8.48067 14.474 9.25067 14.6207 9.984C14.7674 10.7027 14.9874 11.3847 15.2807 12.03C15.5887 12.6607 16.014 13.1667 16.5567 13.548C17.114 13.9293 17.7667 14.12 18.5147 14.12Z" fill="white"/>
+								</svg>
+							</div>
+							<div class="customer-info-item">
+								<span class="customer-tooltip">Так выглядит подсказка</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M19.3067 3.59887C18.883 3.06721 18.2501 2.76225 17.5704 2.76225H15.7865V2.28488H15.9678C16.5977 2.28488 17.1102 1.77239 17.1102 1.14244C17.1102 0.512486 16.5977 0 15.9678 0H4.03279C3.40283 0 2.89035 0.512486 2.89035 1.14244C2.89035 1.77235 3.40283 2.28488 4.03275 2.28488H4.21409V2.76225H2.43012C1.75042 2.76225 1.11757 3.06721 0.693894 3.59887C0.271865 4.1285 0.116393 4.81016 0.267286 5.46904C0.566644 6.77658 1.12782 7.91009 1.89019 8.74706C2.71065 9.64776 3.75593 10.223 4.99768 10.4602C5.8006 11.8378 7.156 12.8553 8.75809 13.2071C8.63964 16.3296 7.98206 17.0891 7.82091 17.229H7.22321C5.94296 17.229 4.81093 18.1658 4.33915 19.6156C4.27637 19.8086 4.4273 20 4.62618 20H11.5053C11.6704 20 11.8037 19.8637 11.7987 19.6974C11.7939 19.5367 11.6537 19.4129 11.4929 19.4129H5.04649C5.49298 18.4308 6.31527 17.8162 7.22317 17.8162H12.7773C13.6852 17.8162 14.5075 18.4308 14.954 19.4129H12.7106C12.5484 19.4129 12.417 19.5443 12.417 19.7064C12.417 19.8686 12.5484 20 12.7106 20H15.3822C15.5841 20 15.721 19.798 15.6592 19.6089C15.1861 18.1629 14.0556 17.2291 12.7773 17.2291H12.1796C12.0185 17.0892 11.3609 16.3297 11.2425 13.2072C12.8446 12.8553 14.2 11.8378 15.0029 10.4603C16.2446 10.223 17.2899 9.6478 18.1103 8.7471C18.2195 8.62725 18.2108 8.44156 18.091 8.33239C17.9712 8.22327 17.7855 8.23192 17.6763 8.35177C17.0442 9.04568 16.2606 9.52364 15.342 9.77889C15.4533 9.51237 15.5452 9.23575 15.616 8.95092C16.2133 8.71293 16.733 8.35455 17.1622 7.88347C17.9377 7.03198 18.3085 5.94489 18.483 5.18283C18.5463 4.90669 18.4808 4.62071 18.3036 4.39827C18.1246 4.17371 17.8574 4.04494 17.5704 4.04494H15.7864V3.34938H17.5704C18.0703 3.34938 18.5358 3.57367 18.8474 3.96477C19.1574 4.35377 19.2717 4.85431 19.1609 5.33803C19.0013 6.03515 18.7633 6.67739 18.4536 7.24699C18.3821 7.37846 18.4237 7.54752 18.5479 7.63093C18.6897 7.72608 18.888 7.67716 18.9694 7.52744C19.3047 6.91087 19.5617 6.21833 19.7332 5.46908C19.8841 4.81012 19.7287 4.12846 19.3067 3.59887ZM4.2555 8.2464C3.88495 8.05245 3.55549 7.79881 3.27245 7.48806C2.58269 6.73078 2.24861 5.74519 2.08982 5.05171C2.06672 4.9508 2.09087 4.84598 2.15608 4.76413C2.22302 4.68013 2.32287 4.63199 2.43008 4.63199H4.21409V7.55574C4.21413 7.78946 4.22846 8.01985 4.2555 8.2464ZM2.32424 8.35173C1.62982 7.58932 1.11643 6.54721 0.839581 5.33799C0.728809 4.85431 0.843065 4.35377 1.15303 3.96481C1.46468 3.5737 1.93016 3.34942 2.43008 3.34942H4.21409V4.0449H2.43012C2.14313 4.0449 1.8759 4.17371 1.69695 4.39827C1.51967 4.62071 1.45427 4.90669 1.51752 5.18279C1.69202 5.94485 2.06281 7.03194 2.83841 7.88344C3.26752 8.35455 3.78721 8.71289 4.38459 8.95088C4.4554 9.23571 4.54719 9.51233 4.65855 9.77889C3.73993 9.5236 2.9563 9.04564 2.32424 8.35173ZM11.4426 17.2291H8.55795C8.8869 16.6584 9.25045 15.5297 9.34181 13.3042C9.55799 13.3288 9.77762 13.3419 10.0003 13.3419C10.2229 13.3419 10.4425 13.3288 10.6587 13.3042C10.7501 15.5297 11.1136 16.6584 11.4426 17.2291ZM10.0003 12.7547C7.1335 12.7547 4.80126 10.4225 4.80126 7.55574V2.28488H6.25151C6.41364 2.28488 6.54508 2.15344 6.54508 1.99131C6.54508 1.82918 6.41364 1.69775 6.25151 1.69775H4.03275C3.72658 1.69775 3.47748 1.44865 3.47748 1.14244C3.47748 0.83623 3.72658 0.58713 4.03279 0.58713H15.9678C16.2739 0.58713 16.5231 0.83623 16.5231 1.14244C16.5231 1.44861 16.274 1.69775 15.9678 1.69775H7.42581C7.26368 1.69775 7.13225 1.82918 7.13225 1.99131C7.13225 2.15344 7.26368 2.28488 7.42581 2.28488H15.1993V7.55574C15.1993 10.4225 12.867 12.7547 10.0003 12.7547ZM17.5704 4.63199C17.6776 4.63199 17.7775 4.68013 17.8444 4.76413C17.9096 4.84598 17.9338 4.9508 17.9107 5.05175C17.7519 5.74519 17.4179 6.73078 16.7281 7.48806C16.445 7.79881 16.1156 8.05245 15.7451 8.2464C15.7721 8.01985 15.7864 7.78946 15.7864 7.55574V4.63199H17.5704Z" fill="white"></path>
+									<path d="M12.1914 5.76679L11.11 5.60964C11.0903 5.60678 11.0733 5.59441 11.0645 5.57652L10.5809 4.59664C10.471 4.37396 10.2485 4.23563 10.0002 4.2356C9.75188 4.2356 9.52932 4.37392 9.41941 4.5966L8.93581 5.57652C8.927 5.59437 8.90998 5.60674 8.89025 5.6096L7.80887 5.76675C7.56314 5.80245 7.36281 5.97135 7.28609 6.20749C7.20934 6.44367 7.27216 6.69806 7.44998 6.87138L8.23247 7.63414C8.24675 7.64803 8.25325 7.66808 8.24989 7.68769L8.06514 8.76472C8.02318 9.00947 8.12189 9.25219 8.32281 9.39815C8.52372 9.54411 8.78503 9.56298 9.00482 9.44743L9.97201 8.93894C9.98963 8.92966 10.0107 8.92966 10.0283 8.93894L10.9955 9.44743C11.2125 9.56149 11.4792 9.54223 11.6775 9.39811C11.8785 9.25215 11.9772 9.00943 11.9352 8.76468L11.7505 7.68765C11.7471 7.66804 11.7536 7.648 11.7678 7.6341L12.5504 6.87134C12.7282 6.69798 12.791 6.4436 12.7142 6.20745C12.6375 5.97139 12.4371 5.80249 12.1914 5.76679ZM12.1405 6.45099L11.358 7.21375C11.2053 7.36257 11.1357 7.57687 11.1718 7.78699L11.3565 8.86402C11.3648 8.91271 11.3128 8.95107 11.2687 8.92778L10.3015 8.41929C10.1145 8.32096 9.88578 8.32096 9.69876 8.41929L8.73153 8.92778C8.68749 8.95095 8.63539 8.91279 8.64377 8.86402L8.82852 7.78695C8.86453 7.57684 8.7949 7.36257 8.64224 7.21375L7.85976 6.45099C7.8241 6.41624 7.8443 6.35494 7.89326 6.34782L8.97468 6.19066C9.18569 6.16001 9.36798 6.02756 9.46227 5.83639L9.94587 4.85647C9.96787 4.81188 10.0323 4.81181 10.0543 4.85647L10.5379 5.83635C10.6323 6.02752 10.8145 6.15997 11.0256 6.19062L12.107 6.34778C12.1559 6.35494 12.1762 6.4162 12.1405 6.45099Z" fill="white"></path></g><defs><clipPath><rect width="20" height="20" fill="white"></rect></clipPath></defs>
+								</svg>
+							</div>
+							<div class="customer-info-item">
+								<span class="customer-tooltip">Так выглядит подсказка</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 4H14.6667V2.66667C14.6655 1.74658 13.9201 1.00114 13 1H7C6.07992 1.00114 5.33447 1.74658 5.33333 2.66667V4H1C0.447754 4 0 4.44775 0 5V12.4199C0.00211588 12.8428 0.268555 13.2189 0.666667 13.361V18C0.666667 18.5522 1.11442 19 1.66667 19H18.3333C18.8856 19 19.3333 18.5522 19.3333 18V13.3613C19.7314 13.2191 19.998 12.8428 20 12.4199V5C20 4.44775 19.5522 4 19 4ZM6 2.66667C6 2.11442 6.44775 1.66667 7 1.66667H13C13.5522 1.66667 14 2.11442 14 2.66667V4H13.3333V2.66667C13.3333 2.48258 13.1841 2.33333 13 2.33333H7C6.81592 2.33333 6.66667 2.48258 6.66667 2.66667V4H6V2.66667ZM12.6667 4H7.33333V3H12.6667V4ZM18.6667 18C18.6667 18.1841 18.5174 18.3333 18.3333 18.3333H1.66667C1.48258 18.3333 1.33333 18.1841 1.33333 18V13.4756L8.66667 14.487V15.3333C8.66667 15.8856 9.11442 16.3333 9.66667 16.3333H10.3333C10.8856 16.3333 11.3333 15.8856 11.3333 15.3333V14.487L18.6667 13.4756V18ZM10.6667 15.3333C10.6667 15.5174 10.5174 15.6667 10.3333 15.6667H9.66667C9.48258 15.6667 9.33333 15.5174 9.33333 15.3333V13.3333C9.33333 13.1493 9.48258 13 9.66667 13H10.3333C10.5174 13 10.6667 13.1493 10.6667 13.3333V15.3333ZM19.3333 12.4199C19.3335 12.5861 19.2113 12.7271 19.0467 12.7503L18.9543 12.763L11.3333 13.814V13.3333C11.3333 12.7811 10.8856 12.3333 10.3333 12.3333H9.66667C9.11442 12.3333 8.66667 12.7811 8.66667 13.3333V13.814L0.953613 12.7503C0.789062 12.7272 0.666504 12.5863 0.666667 12.4199V5C0.666667 4.81592 0.815918 4.66667 1 4.66667H19C19.1841 4.66667 19.3333 4.81592 19.3333 5V12.4199Z" fill="white"></path>
+								</svg>
+							</div>
+							<div class="customer-info-item">
+								<span class="customer-tooltip">Так выглядит подсказка</span>
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.138672 17.1915L17.1913 0.138916L17.8611 0.808706L0.808461 17.8613L0.138672 17.1915Z" fill="white"></path>
+									<path d="M2.84211 5.68421C4.40953 5.68421 5.68421 4.40953 5.68421 2.84211C5.68421 1.27468 4.40953 0 2.84211 0C1.27468 0 0 1.27468 0 2.84211C0 4.40953 1.27468 5.68421 2.84211 5.68421ZM2.84211 0.947368C3.88705 0.947368 4.73684 1.79716 4.73684 2.84211C4.73684 3.88705 3.88705 4.73684 2.84211 4.73684C1.79716 4.73684 0.947368 3.88705 0.947368 2.84211C0.947368 1.79716 1.79716 0.947368 2.84211 0.947368Z" fill="white"></path>
+									<path d="M15.1575 12.3157C13.5901 12.3157 12.3154 13.5904 12.3154 15.1578C12.3154 16.7252 13.5901 17.9999 15.1575 17.9999C16.725 17.9999 17.9996 16.7252 17.9996 15.1578C17.9996 13.5904 16.725 12.3157 15.1575 12.3157ZM15.1575 17.0525C14.1126 17.0525 13.2628 16.2027 13.2628 15.1578C13.2628 14.1128 14.1126 13.263 15.1575 13.263C16.2025 13.263 17.0523 14.1128 17.0523 15.1578C17.0523 16.2027 16.2025 17.0525 15.1575 17.0525Z" fill="white"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="customer-table">
+							<div class="customer-table-row">
+								<p class="customer-table-left">Отзывы:</p>
+								<p class="customer-table-right">
+									<span class="green" title="положительный">+7 </span> <span title="нейтральный">/ 0 / </span> <span class="orange" title="отрицательный"> -1 </span>
+								</p>
+							</div>
+							<div class="customer-table-row">
+								<p class="customer-table-left">Возраст:</p>
+								<p class="customer-table-right">29 лет</p>
+							</div>
+							<div class="customer-table-row">
+								<p class="customer-table-left">Город:</p>
+								<p class="customer-table-right">Москва</p>
+							</div>
+							<div class="customer-table-row">
+								<p class="customer-table-left">На сайте: </p>
+								<p class="customer-table-right">1 год 3 месяца</p>
+							</div>
+							<div class="customer-table-row">
+								<p class="customer-table-left">Просмотров анкеты:</p>
+								<p class="customer-table-right">329</p>
+							</div>
+						</div>
+						<a href="#" class="btn-orange">Запросить расчет</a>
+						<a href="#" class="forcustomer-questions">Задать вопрос</a>
+					</div>
+					<div class="advantages">
+						<div class="advantages-item">
+							<img src="img/favorites.svg" alt="favorites" class="advantages-img">
+							<h3 class="title-18">Реальные отзывы</h3>
+							<p class="text">Размещаются только если есть фото До и После работ, подтвержденные Заказчиком.</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/surface1.svg" alt="surface" class="advantages-img">
+							<h3 class="title-18">Ситсема защиты отзывов</h3>
+							<p class="text">⋄ Проверяються фото на дубли
+								⋄ Публикуются через резервирование средств</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/medal.svg" alt="medal" class="advantages-img">
+							<h3 class="title-18">Влияют на качество</h3>
+							<p class="text">Каждый заказчик может поменять свой отзыв</p>
+						</div>
+						<a href="#" class="advantages-link">
+							<img src="img/question.svg" class="questions-icon" alt="question">
+							Как выбрать хорошего мастера
+						</a>
+					</div>
+				</div>
+				<div class="customer-right">
+					<div class="forcustomer-top">
+						<a href="#" class="forcustomer-tab active">Анкета</a>
+						<a href="#" class="forcustomer-tab">Отзывы (14)</a>
+					</div>
+					<div class="customer-flex">
+						<div class="forcustomer-left">
+							<div class="forcustomer-service">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<h2 class="title-18">Услуги специалиста</h2>
+								<ul class="forcustomer-ul">
+									<li class="forcustomer-li">
+										<p class="text">Строительство
+											<img src="img/up-green.svg" alt="up" class="up-green">
+											<span class="text">14 место</span>
+										</p>
+										<div class="forcustomer-ul2">
+											<a href="#" class="forcustomer-row">
+												<p class="text-14">Разборка окон</p>
+												<p class="text-14">500 руб/час</p>
+											</a>
+											<a href="#" class="forcustomer-row">
+												<p class="text-14">Разборка окон</p>
+												<p class="text-14">500 руб. услуга</p>
+											</a>
+											<a href="#" class="forcustomer-row">
+												<p class="text-14">Разборка окон</p>
+												<p class="text-14">500 руб/час</p>
+											</a>
+											<div class="forcustomer-more-drop">
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб. услуга</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+											</div>
+										</div>
+										<button type="button" class="forcustomer-more text-14">Показать ещё (4)</button>
+									</li>
+									<li class="forcustomer-li">
+										<p class="text">Сантехника
+											<img src="img/down-gray.svg" alt="down" class="down-gray">
+											<span class="text">22 место</span>
+										</p>
+										<div class="forcustomer-ul2">
+											<a href="#" class="forcustomer-row">
+												<p class="text-14">Ремонт италийской сантехники</p>
+												<p class="text-14">500 руб/час</p>
+											</a>
+										</div>
+									</li>
+									<li class="forcustomer-li">
+										<p class="text">Произвольные услуги</p>
+										<div class="forcustomer-ul2">
+											<a href="#" class="forcustomer-row">
+												<p class="text-14">Специалист по тинки винки и только Тинки винки</p>
+												<p class="text-14">500 руб/час</p>
+											</a>
+											<div class="forcustomer-more-drop">
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Специалист по тинки винки и только Тинки винки</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб. услуга</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Специалист по тинки винки и только Тинки винки</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Специалист по тинки винки и только Тинки винки</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Специалист по тинки винки и только Тинки винки</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб. услуга</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+												<a href="#" class="forcustomer-row">
+													<p class="text-14">Разборка окон</p>
+													<p class="text-14">500 руб/час</p>
+												</a>
+											</div>
+										</div>
+										<button type="button" class="forcustomer-more text-14">Показать ещё (12)</button>
+									</li>
+								</ul>
+							</div>
+							<div class="forcustomer-verified">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<h2 class="title-18">Провереный исполнитель</h2>
+								<div class="customer-verified-col">
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/phone.svg" alt="phone" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Телефон</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/email.svg" alt="email" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Email</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/certificate.svg" alt="passport" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Сертефикаты</p>
+											<p class="text-14">Проверены</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/passport.svg" alt="passport" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Паспорт</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/certificate.svg" alt="email" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">ИП</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="forcustomer-info">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<div class="forcustomer-info-top">
+									<div class="forcustomer-info-row">
+										<img src="img/rub.svg" alt="map" class="forcustomer-icon">
+										<p class="text">
+											<span class="forcustomer-text-left">Цена:  </span>
+											<span class="forcustomer-text-right">от 500 рублей час</span>
+										</p>
+									</div>
+									<div class="forcustomer-info-row">
+										<img src="img/point.svg" alt="map" class="forcustomer-icon">
+										<p class="text">
+											<span class="forcustomer-text-left">Работаю в районе: </span>
+											<span class="forcustomer-text-right">метро Приветное</span>
+										</p>
+									</div>
+									<div class="forcustomer-info-row">
+										<img src="img/home.svg" alt="home" class="forcustomer-icon">
+										<p class="text">
+											<span class="forcustomer-text-left">Принимаю у себя:  </span>
+											<span class="forcustomer-text-right">нет</span>
+										</p>
+									</div>
+								</div>
+								<div class="forcustomer-info-content">
+									<p class="text">Здравствуйте!</p>
+									<p class="text">Главная задача для меня, как для дизайнера - это сделать в первую очередь продаваемый дизайн сайта.</p>
+									<p class="text">Люблю свою работу и отношусь ответственно к каждому проекту, уделяю внимание мелочам.
+										<br>Разрабатываю индивидуальный, удобный, красивый, современный дизайн, с учетом usability и требований верстки.</p>
+									<p class="text">Всегда соблюдаю сроки и работаю до победного конца над каждым проектом.</p>
+									<p class="text">Направления моей деятельности:</p>
+									<p class="text">Дизайн landing page <br> Дизайн интернет-магазинов <br>Дизайн корпоративных сайтов<br> Мобильный и адаптивный дизайн<br> Дизайн баннеров<br> Редизайн существующих сайтов, доработка</p>
+									<p class="text">Мои профессиональные навыки:</p>
+									<p class="text">Владение Adobe Photoshop, Adobe Xd, Adobe Illustrator, Figma <br>Знание usability, типографики, композиции</p>
+									<p class="text">Моя цель - предложить своим клиентам лучшие решения и в срок.</p>
+									<p class="text">Если вы хотите высококачественную и профессиональную работу по разумной цене, обращайтесь.</p>
+									<p class="text">Портфолио вне сервиса https://www.behance.net/tolikwwwwwb551 </p>
+									<p class="text">Буду рад сотрудничеству!</p>
+								</div>
+								<button type="button" class="forcustomer-more text-14">Читать далее</button>
+							</div>
+							<div class="forcustomer-portfolio">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<h2 class="title-18">Примеры работ (12)</h2>
+								<div class="gallery">
+									<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+										<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+										<span class="gallery-span">Монтажные работы</span>
+									</a>
+									<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+										<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+										<span class="gallery-span">Монтажные работы</span>
+									</a>
+									<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+										<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+										<span class="gallery-span">Монтажные работы</span>
+									</a>
+									<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+										<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+										<span class="gallery-span">Монтажные работы</span>
+									</a>
+									<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+										<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+										<span class="gallery-span">Монтажные работы</span>
+									</a>
+									<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+										<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+										<span class="gallery-span">Монтажные работы</span>
+									</a>
+									<div class="forcustomer-more-drop">
+										<div class="forcustomer-more-flex">
+											<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+												<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+												<span class="gallery-span">Монтажные работы</span>
+											</a>
+											<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+												<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+												<span class="gallery-span">Монтажные работы</span>
+											</a>
+											<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+												<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+												<span class="gallery-span">Монтажные работы</span>
+											</a>
+											<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+												<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+												<span class="gallery-span">Монтажные работы</span>
+											</a>
+											<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+												<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+												<span class="gallery-span">Монтажные работы</span>
+											</a>
+											<a class="img-popap-hover sample-reviews__img" href="img/sample-reviews-img-big.jpg" title="Краткое описание проделаной работы">
+												<img src="img/sample-reviews-img-big.jpg" alt="image before" class="gallery-img">
+												<span class="gallery-span">Монтажные работы</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="forcustomer-more text-14">Показать ещё (6)</button>
+							</div>
+						</div>
+						<div class="advantages-mob">
+							<div class="advantages-item">
+								<img src="img/favorites.svg" alt="favorites" class="advantages-img">
+								<h3 class="title-18">Реальные отзывы</h3>
+								<p class="text">Размещаются только если есть фото До и После работ, подтвержденные Заказчиком.</p>
+							</div>
+							<div class="advantages-item">
+								<img src="img/surface1.svg" alt="surface" class="advantages-img">
+								<h3 class="title-18">Ситсема защиты отзывов</h3>
+								<p class="text">⋄ Проверяються фото на дубли <br>
+									⋄ Публикуются через резервирование средств</p>
+							</div>
+							<div class="advantages-item">
+								<img src="img/medal.svg" alt="medal" class="advantages-img">
+								<h3 class="title-18">Влияют на качество</h3>
+								<p class="text">Каждый заказчик может поменять свой отзыв</p>
+							</div>
+							<a href="#" class="advantages-link">
+								<img src="img/question.svg" class="questions-icon" alt="question">
+								Как выбрать хорошего мастера
+							</a>
+						</div>
+						<div class="forcustomer-right">
+							<a href="https://vimeo.com/45830194" class="video">
+								<object>
+									<a href="#" class="customer-edit">Редактировать</a>
+									<img src="img/image2.2.jpg" alt="image" class="video-img">
+									<svg class="video-play" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M26.3838 19.5905L17.6905 14.1132C17.4335 13.9602 17.1144 13.9857 16.8734 13.9857C15.9093 13.9857 15.9136 14.73 15.9136 14.9186V26.1136C15.9136 26.273 15.9094 27.0465 16.8734 27.0465C17.1144 27.0465 17.4336 27.0719 17.6905 26.9189L26.3837 21.4417C27.0973 21.0171 26.974 20.5161 26.974 20.5161C26.974 20.5161 27.0973 20.015 26.3838 19.5905Z" fill="#FF855F"/>
+										</g>
+									</svg>
+									<svg class="video-circle video-circle-one" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+										<g>
+											<circle cx="20.1418" cy="20.5164" r="11.5076"  stroke="url(#paint0_linear)" stroke-width="0.5"/>
+										</g>
+										<defs>
+											<linearGradient id="paint0_linear" x1="20.1418" y1="8.75882" x2="20.1418" y2="29.7179" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF855F"/>
+												<stop offset="1" stop-color="#FF855F" stop-opacity="0"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="20.1421" y1="4.18607" x2="20.1421" y2="33.2959" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF855F"/>
+												<stop offset="1" stop-color="#FF855F" stop-opacity="0"/>
+											</linearGradient>
+											<clipPath >
+												<rect x="14.916" y="13.9841" width="13.0639" height="13.0639" fill="white"/>
+											</clipPath>
+										</defs>
+									</svg>
+									<svg class="video-circle video-circle-two" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+										<g>
+											<circle cx="20.1421" cy="20.516" r="16.0799" transform="rotate(105 20.1421 20.516)" stroke="url(#paint1_linear)" stroke-width="0.5"/>
+										</g>
+										<defs>
+											<linearGradient id="paint0_linear" x1="20.1418" y1="8.75882" x2="20.1418" y2="29.7179" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF855F"/>
+												<stop offset="1" stop-color="#FF855F" stop-opacity="0"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear" x1="20.1421" y1="4.18607" x2="20.1421" y2="33.2959" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FF855F"/>
+												<stop offset="1" stop-color="#FF855F" stop-opacity="0"/>
+											</linearGradient>
+											<clipPath >
+												<rect x="14.916" y="13.9841" width="13.0639" height="13.0639" fill="white"/>
+											</clipPath>
+										</defs>
+									</svg>
+								</object>
+							</a>
+							<form class="forcustomer-add">
+								<h2 class="title-18">Укажите URL видеозаписи</h2>
+								<p class="text-14">Загрузите видео к себе на  <a href="#" class="forcustomer-link"> ютуб канал </a> и укажите ссылку на него</p>
+								<input type="text" class="forcustomer-input" placeholder="https://www.youtube.com/watch">
+								<button type="submit" class="btn-orange">Добавить</button>
+							</form>
+							<div class="forcustomer-awards">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<div class="forcustomer-awards-top">
+									<p class="text">Сертификаты и награды</p>
+									<div class="forcustomer-awards-btns">
+										<button type="button" class="forcustomer-awards-arrow forcustomer-awards-prev"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.612248 4.99677C0.319354 5.28966 0.319354 5.76454 0.612247 6.05743L5.38522 10.8304C5.67811 11.1233 6.15298 11.1233 6.44588 10.8304C6.73877 10.5375 6.73877 10.0626 6.44588 9.76974L2.20324 5.5271L6.44588 1.28446C6.73877 0.991565 6.73877 0.516691 6.44588 0.223798C6.15299 -0.0690955 5.67811 -0.0690956 5.38522 0.223798L0.612248 4.99677ZM16.1426 4.7771L1.14258 4.7771L1.14258 6.2771L16.1426 6.2771L16.1426 4.7771Z" fill="#3D404C"/></svg></button>
+										<button type="button" class="forcustomer-awards-arrow forcustomer-awards-next"><svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0088 6.05743C16.3017 5.76454 16.3017 5.28966 16.0088 4.99677L11.2359 0.223799C10.943 -0.0690947 10.4681 -0.0690947 10.1752 0.223799C9.88232 0.516692 9.88232 0.991566 10.1752 1.28446L14.4179 5.5271L10.1752 9.76974C9.88232 10.0626 9.88232 10.5375 10.1752 10.8304C10.4681 11.1233 10.943 11.1233 11.2359 10.8304L16.0088 6.05743ZM0.478516 6.2771H15.4785V4.7771H0.478516V6.2771Z" fill="#3D404C"/></svg></button>
+									</div>
+								</div>
+								<div class="forcustomer-awards-slider">
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+									<a href="img/awards-big.jpg" class="forcustomer-awards-slide" title="Краткое описание проделаной работы">
+										<span class="forcustomer-awards-span"></span>
+										<img src="img/awards.jpg" alt="Certificates and awards" class="forcustomer-awards-img">
+									</a>
+								</div>
+							</div>
+							<div class="customer-verified">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<h2 class="title-18">Провереный исполнитель</h2>
+								<div class="customer-verified-col">
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/phone.svg" alt="phone" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Телефон</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/email.svg" alt="email" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Email</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/certificate.svg" alt="passport" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Сертефикаты</p>
+											<p class="text-14">Проверены</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/passport.svg" alt="passport" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">Паспорт</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+									<div class="customer-verified-row">
+										<div class="customer-verified-item">
+											<img src="img/certificate.svg" alt="email" class="customer-verified-icon">
+										</div>
+										<div class="customer-verified-info">
+											<p class="text-14">ИП</p>
+											<p class="text-14">Подтвержден</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="customer-saved">
+								<a href="#" class="customer-edit">Редактировать</a>
+								<h2 class="title-18">Сохранил контакты (8)</h2>
+								<div class="customer-saved-row">
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+									<a href="#" class="customer-saved-user">
+										<span class="customer-tooltip">Сергей Антонюк</span>
+										<img src="img/foto.jpg" alt="foto" class="customer-saved-img">
+									</a>
+								</div>
+								<a href="#" class="btn-orange">Сохранить контакт</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@import "footer.html"
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,2067 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 768px)
+  .sticky
+    position: fixed
+    z-index: 2
+  .stop
+    position: relative
+    z-index: 2
+  .balance-select
+    &:hover, &.active
+      .balance-arrow
+        transform: scale(1,-1)
+      .balance-drop
+        z-index: 3
+        opacity: 1
+        pointer-events: auto
+@media only screen and (max-width : 1440px)
+  .btn-up
+    right: 20px
+  .mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close
+    top: 0
+@media only screen and (max-width : 1199px)
+  .mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close
+    left: calc(100% + 10px)
+    transform: translate(0)
+  .mfp-arrow.mfp-arrow-right
+    left: auto
+    right: 20px
+    transform: translateY(-50%)
+  .mfp-arrow.mfp-arrow-left
+    left: 20px
+    transform: translateY(-50%)
+  .customer-verified
+    max-width: 240px
+  .forcustomer
+    .customer-verified
+      max-width: 100%
+  .customer-verified
+    max-width: 240px
+  .forcustomer-portfolio .sample-reviews__img
+    height: 13vw
+  .masters-arrow
+    width: 13.3vw
+  .history-li .text, .history-main .text
+    padding: 0 1.5vw
+  .balance
+    flex-direction: column
+    width: calc(50% - 10px)
+    margin-right: 20px
+    margin-bottom: 0
+    &:nth-child(2n+2)
+      margin-right: 0
+  .finance-balance-block
+    display: flex
+  .balance-left, .balance-select
+    max-width: 100%
+    margin: 0 0 10px 0
+  .balance .btn-orange
+    width: 100%
+  .tariff
+    width: calc(50% - 15px)
+    margin-right: 30px
+    &:nth-child(2n+2)
+      margin-right: 0
+  .tariff
+    height: auto
+    &.active
+      &:before
+        height: 100%
+  .tariff-btn
+    opacity: 1
+    pointer-events: auto
+    transform: none
+  .access
+    padding: 20px 10px
+  .sorting-search-input
+    position: absolute
+    right: 0
+    top: 0
+    border-radius: 0
+  .sorting-search-input:focus
+    width: 100%
+    background-color: #F5F6FA
+  .finance-feedback-hide
+    display: none
+  .finance-feedback-desktop .text:nth-child(2), .finance-feedback-desktop .text-14:nth-child(2), .finance-feedback-desktop .text:nth-child(3), .finance-feedback-desktop .text-14:nth-child(3)
+    max-width: 130px
+@media only screen and (max-width : 991px)
+  .header-logo-img
+    height: 25px
+  .header-link, .header
+    height: 40px
+  .btn-blue
+    line-height: 16px
+    padding: 6px 29px 8px
+    font-size: 12px
+  .header-unauthorized .header-link
+    padding-right: 20px
+  .seo-form
+    max-width: 550px
+    padding: 10px 20px
+  .seo-form-title
+    font-size: 18px
+    line-height: 24px
+  .seo-form-text
+    font-size: 14px
+    line-height: 19px
+  .seo-form-input, .seo-form-search h1.text
+    padding: 10px 20px
+    font-size: 14px
+    line-height: 19px
+    width: calc(100% - 150px)
+    &::-webkit-input-placeholder
+      font-size: 14px
+      line-height: 19px
+    &:-moz-placeholder
+      font-size: 14px
+      line-height: 19px
+    &::-moz-placeholder
+      font-size: 14px
+      line-height: 19px
+    &:-ms-input-placeholder
+      font-size: 14px
+      line-height: 19px
+  .seo-form-btn
+    width: 150px
+    font-size: 14px
+    padding: 10px 20px
+    line-height: 19px
+  .seo-first-col
+    min-height: 260px
+    align-items: center
+  .seo-form-gray
+    font-size: 10px
+    line-height: 13px
+
+  .seo-card-item
+    width: 50px
+    height: 50px
+    margin: 10px auto
+  svg.seo-card-icon
+    transform: scale(0.7)
+  .title-18
+    @include text
+    font-family: "SegoeUI-SemiBold", sans-serif
+  .masters-top
+    max-width: 100%
+  .slick-slide
+    width: 541px
+  .masters-foto
+    margin-right: 10px
+  .masters-name
+    margin-right: 5px
+  .masters-gray
+    margin: 0 5px
+  .masters-name, .masters-gray, .masters-review, .review-title, .review-name, .review-num, .seo-text, .seo-between .text-14, .breadcrumbs-link
+    @include small-text
+  .breadcrumbs-link
+    margin-right: 3px
+  .price-item
+    padding: 10px
+  .text, .review-comment, .questions-title, .footer-text
+    @include normal-text
+  .review-bottom
+    border-bottom: 1px solid #F5F6FA
+    padding: 0 0 10px
+  .review-comment
+    padding: 10px 10px 0 10px
+  .review-flex
+    padding: 10px 10px 3px 10px
+  .review-item
+    padding: 0
+    flex-direction: column
+  .review-row, .review-row:first-child
+    width: 100%
+    padding: 0
+  .review-name
+    float: left
+    margin-right: 10px
+  .review-date
+    font-size: 10px
+    line-height: 13px
+  .review
+    .text-small
+      display: block
+  .review-row:last-child
+    display: none
+  .seo-card
+    .seo-text
+      flex-direction: column-reverse
+  .btn-orange
+    font-size: 12px
+    line-height: 26px
+  .slick-arrow
+    top: 50%
+    right: 33px
+    transform: translateY(-50%)
+    z-index: 2
+    border-radius: 50%
+    width: 40px
+    height: 40px
+  .slick-prev
+    left: 33px
+    right: auto
+    background: #6C7185 url(../img/arrow-prev.svg) no-repeat center / contain
+  .slick-next
+    background: #6C7185 url(../img/arrow-next.svg) no-repeat center / contain
+  .masters-arrow
+    display: none
+  .task-left
+    width: calc(100% - 170px - 20px)
+    margin-right: 20px
+    .text, .hide
+      display: none
+  .task-left .seo-card-item
+    margin-top: 10px
+  .show-tablet
+    display: block
+  .task-right
+    max-width: 170px
+    padding: 20px 0 17px
+  .video
+    height: 100px
+  .video-time
+    font-size: 10px
+    line-height: 13px
+    right: 5px
+    bottom: 15px
+  .task-gray
+    padding: 6px 25px
+    .seo-text
+      font-size: 10px
+      line-height: 13px
+  .profit-icon
+    width: 30px
+    height: 30px
+  .profit-top
+    min-height: 50px
+    .profit-icon
+      padding: 7px
+  .profit-item
+    margin-right: 20px
+    width: calc(33.33% - 14px)
+  .profit-ul
+    padding: 20px 10px 0
+    min-height: 245px
+    margin: 0 5px
+    width: calc(100% - 10px)
+  .profit-li
+    @include small-text
+    padding-left: 13px
+  .slider
+    margin-bottom: 20px
+  .task
+    margin-bottom: 30px
+  .profit-top:before, .profit-top:after
+    border-width: 5px
+  .seo-col
+    width: 100%
+    margin: 0 0 30px 0
+  .relinking-flex .title-18
+    padding: 10px
+  .text-small
+    font-size: 10px
+    line-height: 13px
+  .relinking-row
+    padding: 7px 0
+  .relinking
+    margin-bottom: 30px
+  .seo-sixth .seo-col
+    padding: 20px 40px
+    .seo-form-search
+      margin: 10px 0
+  .specialists
+    display: flex
+  .seo-sixth .seo-col:last-child
+    margin: 30px 0 0
+  .seo-sixth
+    margin-bottom: 10px
+  .seo
+    padding: 30px 0
+  .footer-logo-img
+    height: 25px
+  .footer-link, .questions .text-14
+    @include small-text
+  .copyright
+    font-size: 10px
+    line-height: 13px
+  .footer-menu:last-child .footer-link
+    min-height: 70px
+    padding: 0 15px
+    max-width: 165px
+    margin-left: 10px
+    background: url("../img/dashed-tablet.svg") no-repeat center / contain
+  .seo-sixth .text
+    line-height: 39px
+  .footer-btn
+    min-width: 100px
+    font-size: 12px
+    line-height: 30px
+  .masters-content
+    max-height: 290px
+  .seo-form-drop
+    width: calc(100% - 150px)
+  .header-link.active:before
+    content: none
+  .relinking-flex
+    width: calc(100% - 230px - 20px)
+    margin-right: 20px
+  .questions-masters
+    display: block
+  .seo-sixth .seo-form-btn
+    width: 150px
+    @include small-text
+  .seo-sixth .seo-form-input
+    width: calc(100% - 150px)
+  .seo-between .blue
+    width: 150px
+  .questions-icon
+    margin-top: 1px
+  .header-link
+    padding-right: 10px
+    font-size: 14px
+  .price-attachments
+    padding: 10px
+  .masters-content::-webkit-scrollbar
+    width: 4px
+  .seo-card-i
+    margin: 0 auto
+  .customer-flex
+    flex-direction: column-reverse
+  .customer-saved, .customer-verified
+    margin: 0 auto 30px
+    max-width: 100%
+    .btn-orange
+      display: block
+      min-width: 150px
+      padding: 0
+  .customer-right
+    width: calc(100% - 170px)
+    padding-left: 20px
+  .customer-sticky
+    padding: 20px 10px 10px
+    .title-18
+      @include normal-text
+    .btn-orange
+      min-width: 100%
+      padding: 0
+  .customer-left
+    top: 50px
+    max-width: 170px
+  .customer-img
+    width: 78px
+    height: 100px
+  .customer-gray
+    margin: 5px -10px
+  .customer-info
+    padding: 10px 20px
+  .customer-info-item
+    width: 30px
+    height: 30px
+    svg
+      transform: scale(0.8)
+  .customer-table
+    padding-top: 10px
+  .customer-table-left, .customer-table-right
+    @include small-text
+  .header-right-link
+    height: 40px
+  .customer-flex .title-18
+    padding: 20px 10px 10px
+  .customer-verified-col
+    display: flex
+    justify-content: space-between
+    padding: 20px 10px 10px
+    .text-14
+      @include small-text
+  .customer-verified-item
+    width: 30px
+    height: 30px
+  .customer-verified-icon
+    height: 16px
+  .customer-saved-row
+    padding: 15px 10px 0 10px
+  .customer-saved-user
+    margin: 0 14px 20px 0
+  .customer-saved
+    padding-bottom: 20px
+  .customer-review
+    margin-top: 0
+    .review-name
+      float: none
+      margin-right: 0
+    .review-date
+      text-decoration: underline
+    .text-small
+      display: block
+      text-align: left
+      margin: 10px
+      border-bottom: 1px solid #6C7185
+      color: #6C7185
+      width: fit-content
+  .select
+    min-width: 147px
+  .select-item
+    font-size: 12px
+    line-height: 30px
+  .select-option .text-14
+    @include small-text
+  .header-authorized .header-akk-link
+    padding-right: 10px
+  .header-akk-img img
+    width: 30px
+    height: 30px
+  .header-akk
+    padding: 0 10px 0 25px
+  .header-right-svg
+    width: 17px
+    height: 15px
+  .header-right-link
+    padding: 0 28px
+  .header-right-have
+    right: 22px
+    top: 8px
+  .header-logo-down
+    font-size: 10px
+  .header-logo-img
+    height: 23px
+  .customer-verified-row
+    width: 33.33%
+    min-width: 130px
+  .header-drop:after
+    right: 28px
+  .header-drop:before
+    right: 27px
+  .header-akk-drop:before
+    right: calc(50% - 43px)
+  .header-akk-drop:after
+    right: calc(50% - 43px)
+  .header-settings
+    min-width: 250px
+  .settings-top
+    padding: 10px 0
+  .settings-col
+    padding: 3px 10px
+    .text-14
+      @include small-text
+  .settings-label
+    padding: 7px 0
+  .check
+    width: 16px
+    height: 16px
+  .checkbox
+    &:checked ~ .settings-checkbox .check
+      background-size: 10px 9px
+  .settings-row
+    min-width: 80px
+  .forcustomer .customer-img
+    width: 100px
+    height: 100px
+  .advantages-img
+    width: 50px
+    height: 50px
+  .advantages-item .text
+    @include small-text
+    padding: 0
+  .advantages-link
+    background: url("../img/dashed-forcustomer-tablet.svg") no-repeat center/100%
+    height: 63px
+    padding: 15px
+    max-width: 280px
+    width: 100%
+    margin: 30px auto 0
+  .forcustomer
+    .customer-saved-row
+      padding: 15px 0 0 10px
+    .customer-verified
+      display: none
+    .customer-right
+      padding-top: 24px
+    .forcustomer-right
+      width: 100%
+      margin-top: 30px
+    .customer-flex
+      flex-direction: column
+    .forcustomer-left
+      width: 100%
+      padding: 0
+    .customer-sticky .title-18
+      margin-bottom: 8px
+    .customer-table-row
+      margin-bottom: 11px
+    .customer-left .btn-orange
+      margin: 22px auto 10px
+  .forcustomer-service
+    padding-top: 0
+  .forcustomer-row .text-14, .advantages-link, .review-more, .review-text
+    @include small-text
+  .forcustomer-row .text-14
+    max-width: none
+  .forcustomer-row
+    margin-top: 6px
+  .forcustomer-li p.text
+    margin-bottom: 8px
+  .forcustomer-top
+    margin-bottom: 20px
+  .forcustomer-busy
+    margin: 4px 0
+  .forcustomer .customer-star
+    padding-bottom: 10px
+  .forcustomer-questions
+    display: none
+  .forcustomer-top
+    margin-top: 0
+  .forcustomer-tab
+    @include normal-text
+    margin-right: 30px
+  .forcustomer-ul
+    padding: 0 20px
+  .forcustomer-verified
+    display: block
+    .customer-verified-col
+      flex-wrap: wrap
+      justify-content: flex-start
+  .forcustomer-info-row
+    margin-bottom: 11px
+  .forcustomer-info-top, .forcustomer-info-content
+    max-height: none
+    padding: 20px 10px 10px
+  .forcustomer-info
+    padding-bottom: 10px
+  .forcustomer-portfolio .gallery
+    padding: 20px 10px 0 20px
+  .forcustomer-portfolio .sample-reviews__img
+    width: calc(33.33% - 20px)
+    margin-right: 30px
+    height: 19.5vw
+  .forcustomer .video
+    max-height: 305px
+    height: 100%
+  .video-play, .video-circle
+    width: 100px
+    height: 100px
+  .forcustomer-awards .slick-slide
+    width: 85px
+  .forcustomer .customer-saved-user
+    width: 60px
+    margin-right: 15px
+  .forcustomer .customer-saved-user:nth-child(3n+3)
+    margin-right: 15px
+  .forcustomer .customer-saved
+    margin-bottom: 0
+    .btn-orange
+      margin-top: 0
+  .forcustomer-awards-slider
+    width: 100%
+  .review-customer
+    margin: 30px 0
+    padding-bottom: 10px
+  .customer-review-left
+    display: block
+  .filter
+    margin: 12px 0 0
+  .customer-review-forcustomer
+    .customer-review-top
+      align-items: flex-end
+  .review-next
+    @include small-text
+    padding: 0 10px
+  .review-info
+    padding: 0
+    border-bottom: 1px solid #F5F6FA
+    margin-bottom: 12px
+  .review-info-item
+    padding: 15px 20px 8px 20px
+    &:last-child
+      padding: 15px 20px 8px 20px
+    .customer-star
+      padding: 0
+      span
+        display: none
+        &:last-child
+          display: block
+  .review-info-row
+    margin-bottom: 10px
+  .review-specifications
+    padding: 10px 20px
+    span
+      margin-right: 5px
+    .text
+      width: 100%
+      margin-bottom: 10px
+      &:last-child
+        padding: 0
+        margin-bottom: 0
+  .review-top
+    padding: 19px 20px 9px
+  .filter .text
+    font-size: 12px
+    line-height: 25px
+    padding: 0 4.5px
+  .customer-review-forcustomer .customer-review-top
+    margin-bottom: 10px
+  .notifications
+    min-height: calc(100vh - 178px - 40px)
+  .forcustomer-info-content:before
+    height: 57px
+  .review-flex.gallery
+    padding: 0
+    overflow: hidden
+  .review-row:last-child
+    padding: 0
+    width: 100%
+  .sample-reviews__img
+    width: 72px
+    height: 55px
+  .review-col
+    width: 50%
+    padding: 10px 10px 0 10px
+  .review-col:last-child
+    padding: 10px 10px 0 10px
+    border-left: 1px solid #F5F6FA
+    .sample-reviews__img
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+  .settings-tab .text
+    padding: 10px
+  .settings-tab .text:before
+    border: 7px solid #F5F6FA
+    border-left: 5px solid transparent
+    border-top: 8px solid transparent
+    border-bottom: 8px solid transparent
+  .notifications-item
+    margin-left: 20px
+    width: calc(100% - 170px - 20px)
+  .notifications-li
+    .text
+      @include small-text
+    .check
+      width: 22px
+      height: 22px
+    .checkbox:checked ~ .settings-checkbox .check
+      background-size: 15px 100%
+  .notifications-top .text
+    @include text
+  .settings
+    max-width: 170px
+  .settings .text
+    font-family: "SegoeUI", sans-serif
+  .notifications-top
+    margin-bottom: 20px
+    padding: 20px 5px 10px 20px
+  .notifications-li
+    padding: 0 5px 0 20px
+  .settings-item
+    width: calc(100% - 230px - 20px)
+    margin-left: 20px
+  .text-22
+    font-size: 20px
+    line-height: 27px
+  .finance-row
+    padding: 0 20px
+  .tariff
+    width: calc(50% - 10px)
+    margin-right: 20px
+    margin-top: 20px
+  .finance-tariff-bottom
+    padding: 20px
+  .balance-input
+    font-size: 14px
+    width: 80px
+  .history-top-left
+    flex-direction: column
+    align-items: flex-start
+    width: calc(100% - 130px)
+  .history .filter
+    margin: 0
+    padding: 10px
+    border-top: 1px solid #F5F6FA
+    position: relative
+    width: calc(100% + 149px)
+  .history-top
+    padding: 10px 0 0
+    align-items: flex-start
+    .select
+      margin-right: 10px
+    .title-18
+      padding-left: 10px
+      margin-bottom: 10px
+      line-height: 30px
+  .finance
+    .settings
+      max-width: 230px
+  .finance-balance
+    padding: 10px
+  .tariff-bottom .text-small
+    @include small-text
+    &:last-child
+      border-bottom: 0.5px solid rgba(#FFFFFF, 0.2)
+  .tariff-base
+    .tariff-bottom .text-small
+      &:last-child
+        border-bottom: 0.5px solid rgba(#6C7185, 0.2)
+    .btn-orange
+      background: none
+      text-decoration: underline
+      border: none
+  .tariff-center
+    min-height: 90px
+  .tariff-bottom .text-small
+    padding: 8px 0
+  .tariff-btn
+    padding: 15px
+  .tariff-bottom
+    padding: 0 15px
+  .tariff-card
+    min-height: 195px
+  .finance section
+    margin-bottom: 20px
+  .balance-input
+    background-position: right 11px center
+  .history-li .text, .history-main .text
+    @include small-text
+  .history-main
+    padding: 7px 0
+  .history-ul
+    padding: 5px 0 10px
+  .history-ul a
+    padding: 10px 10px 0 10px
+    color: #2F80ED
+    @include small-text
+    text-decoration: none
+    border-top: 1px solid #F5F6FA
+    margin-top: 5px
+  .finance-popular .title-18
+    font-size: 18px
+    line-height: 24px
+  .popular-drop .text-14, .category-top .text-14, .basket-bottom .blue
+    @include small-text
+  .popular
+    padding: 0 0 10px 0
+  .popular-item
+    padding: 6px 10px
+  .popular-plus
+    width: 11px
+    height: 11px
+    margin-top: 4px
+  .popular-drop
+    padding: 0 10px 8px 36px
+  .category
+    padding: 7px 10px 0 10px
+  .category-top .text-14:nth-child(2), .category-accordion-col .category-item:nth-child(2)
+    width: 120px
+    margin: 0 20px
+  .category-top .text-14:first-child
+    width: calc(100% - 120px - 97px - 40px)
+  .category-accordion-col .category-item:first-child
+    width: calc(100% - 120px - 40px)
+  .category-btn
+    line-height: 24px
+  .basket-row
+    padding: 10px
+  .basket
+    min-width: 230px
+  .basket-row .btn-orange
+    font-size: 12px
+    padding: 0 34px
+  .basket-block
+    width: 30px
+    height: 30px
+    padding-left: 5px
+  .basket-img
+    width: 17px
+  .basket-alert
+    width: 10px
+    height: 10px
+  .category-btn:before
+    line-height: 30px
+  .access
+    min-height: 228px
+  .master-right
+    padding-left: 20px
+    width: calc(100% - 230px)
+  .master-left
+    max-width: 230px
+  .map
+    height: 228px
+  .access .title-18
+    margin-bottom: 20px
+  .access-li .btn-orange
+    min-width: 115px
+    padding: 0 10px
+  .access-icon
+    margin-right: 5px
+  .map-expand
+    width: 30px
+    height: 30px
+    right: 10px
+    top: 10px
+  .sorting-select
+    margin: 0 30px
+  .sorting-select-status
+    margin: 0
+  .sorting .text-14
+    @include small-text
+  .master-content
+    padding-top: 20px
+  .sorting
+    padding: 0
+  .card
+    margin-bottom: 10px
+    &-container
+      padding: 10px 10px 0 10px
+  .master-filter-main
+    padding: 0 10px
+    height: 40px
+  .dropdown-item
+    padding: 0 10px
+    height: 46px
+  .dropdown-selected
+    padding-left: 10px
+  .dropdown-category
+    margin-right: 10px
+    padding: 0 5px
+  .dropdown-plus
+    width: 8px
+    height: 8px
+  .dropdown .text
+    @include small-text
+  .dropdown-category .text
+    font-size: 10px
+    line-height: 19px
+  .amount
+    width: 63px
+    padding: 4px 10px 2px
+  .dropdown-col
+    padding: 15px 10px
+  .range-slider-row input
+    width: 90px
+    @include small-text
+    padding: 4px 30px 5px 23px
+  .range-slider-field:before
+    font-size: 12px
+    left: 5px
+    line-height: 25px
+  .range-slider-field:after
+    font-size: 12px
+    right: 5px
+    line-height: 25px
+  .dropdown-label .text-14
+    @include small-text
+  .dropdown-location-selected
+    margin-top: 10px
+  .dropdown-lv2
+    padding: 10px
+  .dropdown-search-drop
+    padding: 46px 10px 10px
+  .dropdown-search-location
+    font-size: 12px
+    padding: 7px 25px
+    background-size: 11px 11px
+    &::-webkit-input-placeholder
+      font-size: 12px
+    &:-moz-placeholder
+      font-size: 12px
+    &::-moz-placeholder
+      font-size: 12px
+    &:-ms-input-placeholder
+      font-size: 12px
+  .card-price
+    top: 10px
+    right: 10px
+    font-size: 18px
+    line-height: 24px
+  .card-top
+    width: calc(100% - 100px)
+  .title-18 img
+    margin-left: 5px
+  .card-location-item
+    margin: 5px 10px 5px 0
+    .text-14
+      @include small-text
+  .card-bottom-row
+    width: calc(100% - 140px)
+  .card-red
+    min-width: 140px
+    padding: 4px 10px
+    .text-14
+      @include small-text
+  .card-bottom-row .blue
+    @include small-text
+  .card-bottom.active
+    padding-bottom: 10px
+  .card-row .btn-orange
+    position: absolute
+    bottom: 25px
+    right: 10px
+    min-width: 115px
+    padding: 0 10px
+  .card .title-18
+    margin-bottom: 5px
+  .card-col .masters-gray
+    margin: 7px 0 0 0
+  .card-mid .text-14
+    padding: 0 0 10px 0
+    @include small-text
+  .master-popular .title-18
+    padding: 20px 10px 10px 10px
+  .master-popular-container
+    padding: 10px
+  .master-popular .blue
+    margin-bottom: 10px
+  .master-sticky
+    top: 50px
+  .dropdown-search
+    background-size: 11px
+  .dropdown-lv2-categories .text-14
+    @include small-text
+  .dropdown-lv2-col
+    max-height: 200px
+  .dropdown-lv2 .dropdown-label
+    padding: 0
+  .dropdown-lv3-content
+    padding-top: 20px
+    max-height: 172px
+  .dropdown-row input
+    font-size: 12px
+  .sorting-drop
+    left: auto
+    right: 0
+    top: calc(100% + 10px)
+  .access-li
+    min-height: 30px
+  .card-bottom-row
+    display: block
+  .map
+    width: 230px
+  .master-right
+    transform: translateY(-258px)
+    margin-bottom: -258px
+  .finance-feedback-desktop
+    display: none
+  .finance-feedback-mob
+    display: block
+  .finance-feedback-row
+    padding: 10px 0
+  .finance-feedback
+    padding: 0
+  .finance-history .select
+    width: 139px
+@media only screen and (max-width : 767px)
+  .forcustomer-info-content:before
+    height: 43px
+  .customer-left
+    padding-bottom: 0
+  .customer-saved-user:first-child, .customer-saved-user:nth-child(10n+1), .customer-saved-user:nth-child(8n+1), .customer-saved-user:nth-child(6n+1), .customer-saved-user:nth-child(4n+1)
+    .customer-tooltip
+      right: auto
+      left: 0
+      &:before
+        right: auto
+        left: 20px
+  .mfp-arrow.mfp-arrow-left
+    left: 10px
+  .mfp-arrow.mfp-arrow-right
+    right: 10px
+  .mfp-arrow.mfp-arrow-left, .mfp-arrow.mfp-arrow-right
+    width: 20px
+    height: 20px
+  .mfp-container
+    padding-left: 40px
+    padding-right: 40px
+  .mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close
+    width: 20px
+    height: 20px
+  .btn-up
+    bottom: 100%
+  .seo-form-drop
+    width: calc(100% - 30px)
+  .burger
+    display: block
+  .seo-card
+    width: 33.33%
+    .seo-text
+      text-decoration-color: blue
+      text-decoration-line: underline
+      text-decoration-style: dashed
+      width: fit-content
+    .seo-card-i
+      display: none
+  .seo-sixth .text
+    left: 10px
+  .header-nav
+    position: fixed
+    left: 0
+    top: 0
+    background: rgba(#000000,0.6)
+    width: 100%
+    height: 100%
+    z-index: 9
+    transition: all 0.3s ease
+    opacity: 0
+    pointer-events: none
+    &.active
+      opacity: 1
+      pointer-events: auto
+      .header-drop
+        pointer-events: auto
+  .header-left
+    display: none
+  .header-top
+    width: calc(100% - 75px)
+  .header-menu
+    background: #ffffff
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+    border-radius: 0 0 5px 0
+    flex-direction: column
+    padding: 10px 20px
+    width: calc(100% - 75px)
+    .header-link
+      height: auto
+      padding: 0
+      margin-bottom: 15px
+  .header-top
+    display: flex
+    justify-content: flex-end
+    background: #ffffff
+  .header-link-img
+    display: none
+  .header-nav .header-drop
+    opacity: 1
+    position: initial
+    border-radius: 0
+    border: none
+  .header-drop-link
+    text-align: left
+    padding: 0
+    margin-bottom: 15px
+  .header-right .header-link, .masters-search-input, .review-comment, .footer-text, .questions-masters-text
+    @include small-text
+  .btn-blue
+    font-size: 10px
+  .seo-form-btn
+    padding: 0
+    color: transparent
+    width: 30px
+    height: 30px
+    background: #FFC501 url("../img/magnifier-black.svg") no-repeat center / 12px 12px
+  .seo-first-col
+    padding: 20px 10px
+    min-height: 210px
+  .seo-sixth .text
+    font-size: 10px
+  .seo-form-input, .seo-form-search h1.text
+    font-size: 10px
+    line-height: 13px
+    padding: 9px 10px 7px
+    width: calc(100% - 30px)
+    &::-webkit-input-placeholder
+      font-size: 10px
+      line-height: 13px
+    &:-moz-placeholder
+      font-size: 10px
+      line-height: 13px
+    &::-moz-placeholder
+      font-size: 10px
+      line-height: 13px
+    &:-ms-input-placeholder
+      font-size: 10px
+      line-height: 13px
+  .seo-form
+    padding: 10px
+  .seo-form-title
+    font-size: 10px
+    line-height: 13px
+  .seo-form-text, .seo-form-title
+    text-align: center
+  .seo-form-text, .seo-form-gray
+    font-size: 9px
+    line-height: 12px
+  .seo-form-search
+    margin: 10px 0 5px
+  .seo-card-item
+    width: 30px
+    height: 30px
+  .seo-cards
+    padding-bottom: 15px
+  .masters-top
+    flex-wrap: wrap
+  .masters-search
+    margin-top: 10px
+  .title-18
+    @include normal-text
+  .slick-slide
+    width: 100%
+    max-width: 300px
+  .slick-slide.gt1 .slide
+    transform: translate(-30%, 0) scale(0.7)
+  .slick-slide.lt1 .slide
+    transform: translate(30%, 0) scale(0.7)
+  .masters-row
+    padding: 10px
+  .masters-review
+    margin-left: 5px
+  .masters-foto
+    margin: 0 5px 0 0
+  .masters-name
+    margin: 0 5px
+  .masters-content
+    padding: 10px
+  .price-item
+    padding: 5px 10px
+    flex-direction: column
+    .text
+      @include small-text
+  .price
+    margin: 10px 0
+  .masters-content
+    max-height: 330px
+  .masters-gray, .review-name, .review-title, .review-num, .masters-review, .masters-name
+    font-size: 10px
+    line-height: 13px
+    margin-bottom: 2px
+  .review-date, .task-left .seo-text
+    font-size: 9px
+    line-height: 12px
+  .review-date
+    text-decoration-line: underline
+  .show-mob
+    display: block
+    float: none
+  .hide
+    display: none
+  .review-flex
+    padding: 10px 10px 8px 10px
+  .review-comment
+    padding: 0 10px
+    border: none
+    margin: 0
+  .review-bottom
+    padding: 10px 0
+    border-top: 1px solid #F5F6FA
+    border-bottom: 1px solid #F5F6FA
+  @supports (-webkit-line-clamp: 2)
+    .review-comment:after
+      display: none !important
+    .review-comment
+      -webkit-line-clamp: 2
+      height: calc(1em * 16px * 2)
+  .task
+    flex-direction: column
+  .task-left
+    padding: 10px 0 0 0
+    width: calc(100% + 20px)
+    margin-right: -10px
+    margin-left: -10px
+  .task .btn-orange
+    padding: 0 20px
+    font-size: 10px
+    min-width: 150px
+  .task-right
+    padding: 10px 0
+    max-width: 300px
+    margin: 30px auto 0
+    .text
+      @include text
+    .text-small
+      margin-top: 10px
+      @include small-text
+  .video
+    margin: 10px 0
+    height: 170px
+  .video-time
+    bottom: 10px
+    right: 10px
+  .video-play
+    width: 50px
+    height: 50px
+  .video-circle
+    width: 55px
+    height: 55px
+    animation: circle 2s linear infinite
+  .profit-item
+    width: 230px
+  .seo-sixth .seo-form-input
+    width: calc(100% - 40px)
+  .seo-sixth .seo-form-btn
+    width: 40px
+    height: 40px
+  .seo-sixth .seo-col
+    padding: 20px
+    .seo-form-input
+      padding: 14px 10px 13px
+  .relinking
+    flex-direction: column-reverse
+  .questions-masters
+    max-width: 100%
+  .relinking-flex
+    width: 100%
+    margin: 20px 0 0 0
+  .footer .container
+    padding: 0
+  .footer-flex, .footer-row
+    flex-direction: column
+  .footer-menu
+    margin: 0 auto
+  .footer-link
+    text-align: center
+    margin: 0 0 20px 0
+  .footer
+    padding: 0
+  .footer-logo
+    background: #F5F6FA
+    border-radius: 0 0 20px 20px
+    padding: 10px 20px
+  .footer-logo-down
+    color: #3D404C
+    font-size: 10px
+  .copyright
+    display: none
+  .footer-menu:last-child .footer-link
+    min-height: 46px
+    max-width: 280px
+    background: url("../img/dashed-mob.svg") no-repeat center / 100%
+    margin: 0 auto 10px
+  .footer-row .footer-menu
+    width: 100%
+  .footer-bottom
+    flex-direction: column
+    border-bottom: 1px solid #494C59
+    .footer-btn
+      margin: 10px 0
+  .copyright-mob
+    display: block
+  .seo
+    padding: 0 0 60px 0
+  .seo-first
+    margin-right: -10px
+    margin-left: -10px
+    margin-bottom: 30px
+  .masters-search .text
+    padding: 7px 10px
+    width: calc(100% - 30px)
+    @include small-text
+  .masters-search-input
+    padding: 7px 10px
+    width: calc(100% - 30px)
+    &::-webkit-input-placeholder
+      font-size: 12px
+      line-height: 16px
+    &:-moz-placeholder
+      font-size: 12px
+      line-height: 16px
+    &::-moz-placeholder
+      font-size: 12px
+      line-height: 16px
+    &:-ms-input-placeholder
+      font-size: 12px
+      line-height: 16px
+
+  .masters-search
+    height: 30px
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+  .masters-search-btn
+    height: 30px
+    width: 30px
+  .profit
+    margin-right: -10px
+    margin-bottom: 0
+  .questions-masters-dashed
+    margin: 10px 0
+  .questions-masters .btn-orange
+    margin: 10px auto
+  .relinking-row .blue
+    margin: 5px
+  .relinking-row
+    padding: 10px 5px
+  .seo-col
+    margin-bottom: 15px
+  .relinking
+    margin-bottom: 20px
+  .seo-between .text-14, .questions-title
+    font-size: 10px
+    line-height: 13px
+  .seo-between .blue
+    width: auto
+  .specialists
+    display: none
+  .seo-sixth .seo-col:last-child
+    margin-top: 15px
+  .questions
+    padding: 0 10px
+  .questions-item
+    padding: 10px 0 5px
+  .questions-card
+    padding-bottom: 5px
+  .questions-plus
+    width: 8px
+    height: 8px
+  .questions-icon
+    width: 13px
+    height: 13px
+    margin-right: 5px
+    margin-top: 0
+  .questions .text-14
+    margin: 5px 0
+    padding: 0 18px
+  .breadcrumbs-link, .questions .text-14, .relinking-row .blue
+    font-size: 9px
+    line-height: 12px
+  .masters-arrow
+    display: none
+  .masters-slider
+    margin-right: -10px
+    margin-left: -10px
+  .seo-card-inside, .seo-card-inside
+    border: 3px solid #FFFFFF
+  .border-line-one
+    height: 3px
+  .border-line-two
+    width: 3px
+  .seo-text-tooltip
+    font-size: 12px
+  .seo-card:nth-child(3n+3) .seo-text-tooltip
+    transform: translate(-80%,calc(-100% - 10px))
+    &:before
+      left: 80%
+  .seo-card:nth-child(3n+1) .seo-text-tooltip
+    transform: translate(-20%,calc(-100% - 10px))
+    &:before
+      left: 20%
+  .header-akk-link
+    display: none
+  .header-akk-img
+    margin: 0
+  .header-akk
+    padding: 0 0 0 20px
+    height: 40px
+  .header-right-link
+    padding: 0 18px
+  .customer-main
+    flex-direction: column
+  .customer-left
+    position: inherit
+    margin: -70px auto 0
+  .customer-right
+    width: 100%
+    padding: 20px 0 0 0
+  .customer-verified-row
+    width: fit-content
+  .customer-verified-col
+    flex-wrap: wrap
+    padding: 10px 10px 0 10px
+  .customer-saved-user
+    margin: 0 10px 10px 0
+    width: 57px
+    height: 57px
+  .customer-saved-row
+    padding: 10px 0 10px 10px
+  .header-notifications
+    max-width: 232px
+  .header-drop:before
+    right: 4px
+  .header-drop:after
+    right: 5px
+  .header-right-have
+    right: 9px
+  .customer-left .customer-sticky
+    .title-18, .text-14
+      @include small-text
+  .customer-gray
+    padding: 7px
+    margin: 5px -10px 10px
+  .customer-table-left, .customer-table-right, .notifications-more span, .forcustomer-row .text-14, .forcustomer-more
+    font-size: 10px
+    line-height: 13px
+  .customer-table-row
+    margin-bottom: 7px
+  .customer-left .btn-orange
+    font-size: 10px
+  .customer-verified-item
+    margin-right: 12px
+  .customer-saved, .customer-verified
+    margin-bottom: 20px
+  .customer-review
+    .review-title
+      width: calc(100% + 50px)
+    .review-block
+      width: calc(100% - 55px)
+  .customer-review .review-user
+    width: 45px
+    height: 45px
+  .customer-review .review-left
+    align-items: center
+  .notifications-bottom
+    height: 30px
+  .notifications-more
+    padding: 5px
+  .notifications-setting
+    padding: 7px
+    height: 100%
+  .header-settings
+    min-width: 230px
+  .header-settings .text, .forcustomer-li .text
+    @include small-text
+  .settings-pc
+    margin-right: 6px
+    width: 10px
+    height: 9px
+  .settings-row
+    min-width: 60px
+  .settings-checkbox
+    width: 35px
+  .back-gray
+    width: 12px
+    height: 15px
+    padding: 1px
+  .header .header-settings
+    &:after
+      right: 5px
+    &:before
+      right: 4px
+  .header-akk-top
+    display: flex
+    width: 100%
+    padding: 5px 20px
+  .header-akk-drop
+    padding: 0
+    right: 0
+    top: 0
+    width: calc(100% - 75px)
+  .header-akk-container
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 10
+    background: rgba(61, 64, 76, 0.6)
+    width: 100%
+    height: 100%
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease
+  .header-akk.active
+    .header-akk-container
+      opacity: 1
+      pointer-events: auto
+  .header-akk-user
+    display: flex
+    align-items: center
+  .header-akk-name
+    @include small-text
+    color: #3D404C!important
+    margin-left: 10px
+  .header-akk-drop
+    a
+      margin-top: 15px
+    .user-panel__exit
+      margin-bottom: 15px
+  .advantages
+    display: none
+  .forcustomer
+    .customer-left
+      margin-top: -50px
+  .forcustomer .customer-sticky .title-18
+    margin-bottom: 6px
+  .forcustomer .customer-table-row
+    margin-bottom: 7px
+  .forcustomer .customer-right
+    padding-top: 10px
+  .forcustomer-ul
+    padding: 0 10px
+  .forcustomer-li p.text
+    margin-bottom: 10px
+  .forcustomer-service, .forcustomer-verified, .forcustomer-info
+    margin-bottom: 20px
+  .forcustomer-verified .customer-verified-row
+    width: 50%
+  .forcustomer-info-top
+    padding: 10px
+  .forcustomer-info-content
+    padding: 10px 10px 0 10px
+  .forcustomer-info-row
+    margin-bottom: 16px
+    &:last-child
+      margin-bottom: 0
+    .text
+      @include small-text
+  .forcustomer-info-content .text
+    font-size: 10px
+    line-height: 13px
+    margin-bottom: 14px
+  .forcustomer-portfolio .sample-reviews__img, .forcustomer-portfolio .sample-reviews__img:nth-child(3n+3)
+    width: calc(50% - 10px)
+    margin-right: 20px
+    margin-bottom: 10px
+    height: 35.9vw
+    &:nth-child(2n+2)
+      margin-right: 0
+  .forcustomer .gallery-span, .review-text, .review-more, .notifications-li .text
+    font-size: 10px
+    line-height: 13px
+  .advantages-mob
+    display: block
+  .forcustomer .customer-flex .title-18
+    @include normal-text
+  .advantages-item .title-18
+    padding: 0
+  .advantages-item, .forcustomer .forcustomer-right
+    margin-top: 20px
+  .advantages-link
+    background: url("../img/dashed-gray-little.svg") no-repeat center / 100%
+    height: 52px
+  .forcustomer
+    .gallery
+      padding: 10px 10px 0 20px
+    .video-play, .video-circle
+      width: 100px
+      height: 100px
+  .forcustomer-portfolio .forcustomer-more
+    margin-top: 10px
+  .advantages-link, .forcustomer .customer-saved
+    margin-top: 20px
+  .forcustomer .video, .forcustomer-awards
+    margin-bottom: 20px
+  .forcustomer-awards-top
+    padding: 20px 10px 13px 10px
+  .forcustomer-awards .slick-arrow
+    transform: none
+    width: 26px
+    padding: 5px
+  .forcustomer-awards-arrow svg
+    width: 15px
+  .forcustomer-awards-slider
+    padding: 10px 0 10px 10px
+  .forcustomer-awards .slick-slide
+    width: 100px
+  .forcustomer .customer-saved-user, .forcustomer .customer-saved-user:nth-child(3n+3)
+    width: 57px
+    height: 57px
+    margin-right: 10px
+  .forcustomer .customer-saved-row
+    padding: 10px 0 10px 10px
+  .customer-info-item .customer-tooltip, .review-specifications .text, .review-info-item .text, .forcustomer-tab
+    @include small-text
+  .customer-info-item
+    &:last-child, &:nth-child(3)
+      .customer-tooltip
+        right: 0
+        left: auto
+        &:before
+          right: 10px
+          left: auto
+  .review-top
+    padding: 20px 10px 10px 10px
+    justify-content: space-between
+  .review-customer .review-top .customer-star
+    padding: 0
+  .review-info-item, .review-info-item:last-child
+    width: 100%
+    border: none
+    padding: 0
+  .review-info, .review-customer .text-14
+    padding: 10px 10px 0 10px
+    margin: 0
+  .review-specifications
+    padding: 10px
+  .review-customer
+    margin: 20px 0 25px
+  .customer-review-forcustomer
+    .select
+      position: absolute
+      top: -5px
+      right: 0
+  .filter .text, .select-item, .select-option .text-14
+    font-size: 10px
+  .select-option .text-14
+    line-height: 13px
+  .gallery, .customer-review-forcustomer .gallery
+    padding: 0
+  .review-img
+    max-height: 90px
+    height: 100%
+  .sample-reviews__img
+    width: 118px
+  .circle-red
+    width: 5px
+    height: 5px
+  .seo .review-img, .sample-reviews__img
+    height: 90px
+  .notifications
+    min-height: 40vh
+  .review-col, .review-col:last-child
+    padding: 10px 5px 0
+    .review-title
+      padding: 0 5px
+  .sample-reviews__img:first-child, .sample-reviews__img:nth-child(2)
+    margin-bottom: 10px
+  .review-col:last-child .sample-reviews__img, .sample-reviews__img
+    margin: 0 5px 10px
+  .forcustomer-portfolio .sample-reviews__img
+    margin: 0 20px 10px 0
+  .customer-edit
+    font-size: 9px
+    line-height: 12px
+  .btn-up
+    background: none
+    width: fit-content
+    height: fit-content
+    top: 5px
+    padding: 0
+    svg
+      display: block
+    img
+      display: none
+  .settings-flex
+    flex-direction: column
+    padding: 20px 0 40px
+  .settings
+    max-width: 100%
+  .notifications-item
+    width: 100%
+    margin: 20px 0 0
+  .settings-tab .text, .finance-tariff-bottom .text-14
+    @include small-text
+    text-align: center
+  .finance-tariff-bottom
+    padding: 0 30px 10px
+  .settings-tab .text:hover:before, .settings-tab .text.active:before
+    content: none
+  .notifications-top .text
+    @include normal-text
+  .notifications-top-row .text
+    display: none
+  .notifications-li
+    padding: 0 0 0 10px
+  .notifications-top
+    margin-bottom: 10px
+    padding: 20px 0 10px 20px
+  .notifications-li
+    .check
+      width: 15px
+      height: 15px
+    .checkbox:checked ~ .settings-checkbox .check
+      background: #4880FF url("../img/check.svg") no-repeat center/10px 10px
+  .notifications .settings-label, .notifications .notifications-top-row
+    width: 15%
+  .notifications-li .text, .notifications-left
+    width: 55%
+    padding-right: 10px
+  .finance .settings, .settings-item
+    max-width: 100%
+    margin: 0 0 20px 0
+    width: 100%
+  .tariff, .tariff:nth-child(2n+2)
+    width: 240px
+    margin: 10px
+  .finance-row
+    padding: 10px 10px 0 10px
+    justify-content: center
+  .finance-balance-block
+    flex-direction: column
+  .finance-balance
+    padding: 10px 0 0 0
+    .title-18
+      padding: 0 10px
+  .balance
+    width: 100%
+    margin: 0
+    padding: 10px
+    &:first-child
+      border-top: 1px solid #F5F6FA
+      border-bottom: 1px solid #F5F6FA
+  .finance-history
+    select
+      min-width: 120px
+    .select
+      margin-right: 10px
+  .finance-history .select
+    width: 124px
+  .history .filter
+    width: calc(100% + 134px)
+    display: flex
+    flex-wrap: nowrap
+    overflow: hidden
+    overflow-x: auto
+    &::-webkit-scrollbar
+      display: none
+  .history-main-mob
+    display: flex
+  .history-main .history-row
+    display: none
+  .history-row-item
+    flex-direction: column
+    display: flex
+  .history-row-item
+    .text
+      width: auto!important
+    &:last-child
+      flex-direction: column-reverse
+  .history-li .text, .history-main .text
+    padding: 0 10px
+    font-size: 10px
+    line-height: 13px
+  .history-li
+    .change
+      color: #33C093
+      @include small-text
+    &:nth-child(2n+2)
+      .change
+        color: #EB5757
+  .popular-item .text
+    @include small-text
+  .popular-drop
+    padding-left: 32px
+  .popular-plus
+    margin-top: 2px
+  .finance-tariff .title-18
+    padding: 10px 25px
+  .tariff-card
+    min-height: 190px
+  .tariff-base .btn-orange
+    line-height: 1
+  .finance-row
+    padding: 10px 0 0 0
+  .history .filter .text
+    font-size: 12px
+  .history select
+    font-size: 14px
+  .history-top
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: 0
+      bottom: 0
+      height: 44px
+      width: 30px
+      background: linear-gradient(to left, rgba(#ffffff, 1),  rgba(#ffffff, 0.2))
+      pointer-events: none
+  .category-top
+    display: flex
+    justify-content: space-between
+    padding: 10px 30px 10px 10px
+    .text-14:nth-child(2)
+      display: none
+    .text-14
+      width: auto!important
+  .category-item
+    width: fit-content!important
+  .category-accordion-col
+    flex-direction: column
+    width: fit-content
+    .text
+      @include small-text
+    .category-item:nth-child(2) .text
+      text-align: left
+      font-size: 10px
+      line-height: 13px
+  .category-btn
+    font-size: 10px
+    border: 1px solid #FFC501
+    line-height: 22px
+    min-width: 74px
+    &:before
+      line-height: 26px
+      font-size: 10px
+  .category-accordion
+    justify-content: space-between
+    padding: 5px 10px
+  .category-arrow
+    width: 10px
+    margin-right: 10px
+  .category-drop-item
+    padding: 5px 10px
+    justify-content: space-between
+    .text-14
+      @include small-text
+      padding-left: 20px
+  .banner-block
+    justify-content: flex-start
+    padding: 10px
+  .banner-block .text
+    @include small-text
+  .banner-block .text-14
+    font-size: 10px
+    line-height: 13px
+    margin-top: 5px
+  .banner .btn-orange
+    margin-top: 8px
+    font-size: 10px
+    min-width: 170px
+    padding: 0 10px
+  .seo .sample-reviews__img
+    max-width: 106px
+  .customer-saved
+    overflow: hidden
+  .master-flex
+    flex-direction: column-reverse
+  .master-right
+    padding: 0
+    width: 100%
+  .master
+    padding: 20px 0 40px
+  .access
+    padding: 10px
+    min-height: auto
+  .sorting-hide
+    display: none
+  .access-li-left
+    padding: 10px 0
+  .access-li
+    margin: 0
+    min-height: auto
+    display: block
+    &:first-child
+      .access-li-left
+        padding: 0
+  .access-li .text
+    @include small-text
+  .access .title-18
+    margin-bottom: 10px
+  .sorting-select
+    margin: 0 20px
+  .sorting-select-status
+    margin: 0
+  .sorting-item svg
+    width: 10px
+    height: 6px
+  .sorting-search
+    svg
+      width: 12px
+      height: 12px
+  .sorting-search-input
+    padding-right: 25px
+  .sorting-select-status .sorting-drop
+    min-width: 186px
+  .sorting .text-14
+    font-size: 10px
+    line-height: 13px
+  .card-top
+    width: 100%
+    display: block
+    transition: all 0.3s ease
+  .card-mob
+    padding: 0 10px
+  .card-price, .card-red
+    position: initial
+    width: 100%
+  .card-position
+    margin: 0 -10px 5px
+  .card-price
+    background: #F5F6FA
+    padding: 0 10px
+  .card-red
+    justify-content: flex-start
+    .text-14
+      margin: 0 2px
+      &:first-child
+        font-size: 10px
+  .card .title-18
+    margin-bottom: 10px
+  .card-fire
+    width: 9px
+    height: 12px
+  .card-img, .card-col .text, .card-row .btn-orange, .card-bottom .card-bottom-spam
+    display: none
+  .card-col
+    margin: 0
+  .card-col .masters-gray
+    @include small-text
+  .card-container
+    width: calc(100% - 20px)
+    margin: 0 auto
+    transition: all 0.3s ease
+    padding: 10px 0 0 0
+  .card-row
+    //margin: 0 -10px
+    transition: all 0.3s ease
+    padding: 0 10px 10px 10px
+  .card
+    margin: 0 -10px 10px
+    padding: 0
+    width: calc(100% + 20px)
+    &.active
+      .card-mob-img
+        width: 68px
+        height: 88px
+      .card-container
+        width: 100%
+      .card-top
+        width: calc(100% - 78px)
+      .title-18
+        margin: 5px 0
+  .card-row
+    background: #F5F6FA
+    padding: 3px 7px 10px 10px
+    margin-top: 5px
+  .card-bottom-row
+    width: 100%
+  .card-bottom-row .blue
+    position: absolute
+    right: 10px
+    bottom: 5px
+    margin: 0
+    font-size: 10px
+    line-height: 13px
+  .card-bottom
+    padding-bottom: 5px
+    .active
+      padding-bottom: 5px
+  .card-location-item .text-14
+    font-size: 10px
+    line-height: 13px
+  .card-location-icon
+    width: 8px
+    height: 10px
+    margin-right: 6px
+  .title-18 img
+    margin: 2px 0 0 0
+  .card-mid .text-14
+    padding: 10px
+    line-height: 13px
+    font-size: 10px
+  .card-mob-btn
+    display: block
+    padding: 0 10px
+  .card-mob-img
+    display: block
+  .card-bottom
+    padding: 0 10px 10px
+  .card-col .masters-gray span
+    margin: 0 2px
+  .card-status
+    width: 5px
+    height: 5px
+  .page-item:nth-child(5)
+    display: none
+  .page-link
+    margin: 0 7px
+  .page-item
+    &:first-child
+      .page-link
+        margin-left: 0
+    &:last-child
+      .page-link
+        margin-right: 0
+  .master-popular
+    display: none
+  .master-sticky
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 9
+    width: 100%
+    height: 100%
+    overflow-y: auto
+    background: rgba(61, 64, 76, 0.6)
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease
+    &.active
+      opacity: 1
+      pointer-events: auto
+  .master-filter
+    max-width: 225px
+  .dropdown-lv3-content
+    padding-top: 10px
+    max-height: 182px
+  .master-filter-main
+    border-radius: 0
+    .dropdown-plus
+      transform: rotate(45deg)
+      width: 12px
+      height: 12px
+  .dropdown-item
+    height: 34px
+  .master-filter-main.active .dropdown-plus:after
+    transform: translate(-50%, -50%) rotate(0deg)
+  .dropdown .text, .dropdown-label .text-14, .dropdown-lv2-categories .text-14
+    font-size: 10px
+    line-height: 13px
+  .dropdown-search, .dropdown-search-location
+    font-size: 10px
+    line-height: 13px
+    &::-webkit-input-placeholder
+      font-size: 10px
+      line-height: 13px
+    &:-moz-placeholder
+      font-size: 10px
+      line-height: 13px
+    &::-moz-placeholder
+      font-size: 10px
+      line-height: 13px
+    &:-ms-input-placeholder
+      font-size: 10px
+      line-height: 13px
+  .dropdown-check-all
+    font-size: 9px
+    line-height: 12px
+  .dropdown-category .text
+    line-height: 19px
+  .range-slider-row input, .range-slider-field:before, .range-slider-field:after, .dropdown-row input
+    font-size: 10px
+  .range-slider-field:before, .range-slider-field:after
+    line-height: 26px
+    top: 1px
+  .dropdown-lv2
+    padding: 5px 10px 10px 10px
+  .dropdown-col
+    padding: 10px
+  .dropdown-label .check
+    width: 13px
+    height: 13px
+  .dropdown-list-location
+    .dropdown-lv2
+      padding: 0 0 10px 0
+    .dropdown-location
+      padding: 0 10px
+  .dropdown-search-location
+    padding: 11px 10px 11px 35px
+    background-position: left 10px center
+  .dropdown-location-selected .delete
+    width: 8px
+    height: 8px
+  .master-btns
+    display: flex
+  .dropdown-lv2-item
+    margin-bottom: 10px
+  .dropdown-lv2-col
+    max-height: 180px
+  .dropdown-lv3-content
+    max-height: 160px
+  .map
+    display: none
+  .master-right
+    transform: translateY(0)
+    margin-bottom: 0
+  .master-right-map
+    display: none
+  .master-sticky.active
+    margin: 0
+  .card-location
+    display: block
+  .finance-feedback-item
+    padding: 0 10px
+  .finance-feedback-box
+    margin: 10px 20px 0
+  .finance-feedback-item
+    flex-direction: column
+  .finance-feedback-bottom
+    padding: 10px
+    background: #F5F6FA
+    border-radius: 0 0 5px 5px
+@media only screen and (max-width : 480px)
+  .customer-verified-row
+    width: 50%
+
+
+
+
+
+

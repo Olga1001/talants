@@ -1,0 +1,87 @@
+.review
+  &-customer
+    @include container
+    padding-bottom: 20px
+    .review-top .customer-star
+      padding: 0 10px
+    .text-14
+      padding: 0 20px
+    .customer-star
+      padding: 0
+  &-top
+    border-bottom: 1px solid #F5F6FA
+    padding: 15px 20px 9px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &-specifications
+    display: flex
+    flex-wrap: wrap
+    padding: 14px 20px
+    border-bottom: 1px solid #F5F6FA
+    .text
+      width: 50%
+      &:last-child
+        padding-left: 65px
+    span
+      color: #6C7185
+      margin-right: 13px
+  &-info
+    display: flex
+    flex-wrap: wrap
+    padding: 35px 20px 17px
+    &-item
+      width: 50%
+      position: relative
+      border-right: 1px solid #F5F6FA
+      padding: 0 65px 0 0
+      &:last-child
+        border: none
+        padding: 0 0 0 65px
+      .text
+        color: #6C7185
+    &-row
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 13px
+  &-next
+    @include normal-text
+    color: #6C7185
+    text-decoration: underline
+    margin-top: 6px
+    display: block
+
+.customer-review
+  &-forcustomer
+    padding-bottom: 20px
+    margin-top: 30px
+    .customer-review-top
+      margin-bottom: 25px
+  &-left
+    display: flex
+.filter
+  display: flex
+  flex-wrap: wrap
+  margin: 0 25px
+  .text
+    margin: 0 10px 0 0
+    line-height: 27px
+    padding: 0 9px
+    white-space: nowrap
+    &:last-child
+      margin-right: 0
+    &.active
+      background: #4880FF
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1)
+      border-radius: 5px
+      color: #ffffff
+.review-text
+  max-width: 530px
+  width: 100%
+  margin: 0 auto
+  display: block
+  text-align: center
+  color: #6C7185
+
