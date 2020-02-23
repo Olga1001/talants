@@ -1,8 +1,12 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1025px)
+  .dropdown-item:hover
+    background: #4880FF
+    .text
+      color: #ffffff
+    .dropdown-plus:before, .dropdown-plus:after
+      background: #ffffff
 @media only screen and (min-width : 768px)
   .sticky
     position: fixed
@@ -89,6 +93,12 @@
     display: none
   .finance-feedback-desktop .text:nth-child(2), .finance-feedback-desktop .text-14:nth-child(2), .finance-feedback-desktop .text:nth-child(3), .finance-feedback-desktop .text-14:nth-child(3)
     max-width: 130px
+  .masters
+    .swiper-slide
+      display: flex
+      justify-content: center
+      .slide
+        margin-left: 0
 @media only screen and (max-width : 991px)
   .header-logo-img
     height: 25px
@@ -149,8 +159,10 @@
     font-family: "SegoeUI-SemiBold", sans-serif
   .masters-top
     max-width: 100%
-  .slick-slide
-    width: 541px
+  .masters .swiper-slide
+    .slide
+      min-width: 541px
+      //margin-left: -21px
   .masters-foto
     margin-right: 10px
   .masters-name
@@ -195,21 +207,21 @@
   .btn-orange
     font-size: 12px
     line-height: 26px
-  .slick-arrow
-    top: 50%
-    right: 33px
-    transform: translateY(-50%)
-    z-index: 2
-    border-radius: 50%
-    width: 40px
-    height: 40px
-  .slick-prev
-    left: 33px
-    right: auto
-    background: #6C7185 url(../img/arrow-prev.svg) no-repeat center / contain
-  .slick-next
-    background: #6C7185 url(../img/arrow-next.svg) no-repeat center / contain
-  .masters-arrow
+  //.slick-arrow
+  //  top: 50%
+  //  right: 33px
+  //  transform: translateY(-50%)
+  //  z-index: 2
+  //  border-radius: 50%
+  //  width: 40px
+  //  height: 40px
+  //.slick-prev
+  //  left: 33px
+  //  right: auto
+  //  background: #6C7185 url(../img/arrow-prev.svg) no-repeat center / contain
+  //.slick-next
+  //  background: #6C7185 url(../img/arrow-next.svg) no-repeat center / contain
+  .masters-btns
     display: none
   .task-left
     width: calc(100% - 170px - 20px)
@@ -705,11 +717,9 @@
   .tariff-base
     .tariff-bottom .text-small
       &:last-child
-        border-bottom: 0.5px solid rgba(#6C7185, 0.2)
-    .btn-orange
-      background: none
-      text-decoration: underline
-      border: none
+        border-bottom: none
+    .tariff-card
+      min-height: 100%
   .tariff-center
     min-height: 90px
   .tariff-bottom .text-small
@@ -818,7 +828,6 @@
       padding: 10px 10px 0 10px
   .master-filter-main
     padding: 0 10px
-    height: 40px
   .dropdown-item
     padding: 0 10px
     height: 46px
@@ -832,26 +841,26 @@
     height: 8px
   .dropdown .text
     @include small-text
-  .dropdown-category .text
-    font-size: 10px
-    line-height: 19px
   .amount
     width: 63px
-    padding: 4px 10px 2px
+    padding: 4px 27px 2px 10px
+  .dropdown-amount:before
+    font-size: 12px
+    padding: 4px 0 2px
+  .dropdown-row
+    flex-wrap: wrap
+  .dropdown-amount:before
+    font-size: 12px
+    padding: 4px 0 2px
   .dropdown-col
     padding: 15px 10px
+  .range-slider-row
+    margin-top: 10px
   .range-slider-row input
-    width: 90px
     @include small-text
-    padding: 4px 30px 5px 23px
-  .range-slider-field:before
-    font-size: 12px
-    left: 5px
-    line-height: 25px
-  .range-slider-field:after
-    font-size: 12px
-    right: 5px
-    line-height: 25px
+  .range-slider-row input
+    width: 35px
+    padding: 5px
   .dropdown-label .text-14
     @include small-text
   .dropdown-location-selected
@@ -859,7 +868,7 @@
   .dropdown-lv2
     padding: 10px
   .dropdown-search-drop
-    padding: 46px 10px 10px
+    padding: 50px 10px 10px
   .dropdown-search-location
     font-size: 12px
     padding: 7px 25px
@@ -886,7 +895,7 @@
     .text-14
       @include small-text
   .card-bottom-row
-    width: calc(100% - 140px)
+    width: calc(100% - 160px)
   .card-red
     min-width: 140px
     padding: 4px 10px
@@ -898,7 +907,7 @@
     padding-bottom: 10px
   .card-row .btn-orange
     position: absolute
-    bottom: 25px
+    bottom: 10px
     right: 10px
     min-width: 115px
     padding: 0 10px
@@ -943,12 +952,9 @@
   .master-right
     transform: translateY(-258px)
     margin-bottom: -258px
-  .finance-feedback-desktop
-    display: none
-  .finance-feedback-mob
-    display: block
-  .finance-feedback-row
-    padding: 10px 0
+  .finance-feedback .text, .finance-feedback .text-14
+    @include small-text
+
   .finance-feedback
     padding: 0
   .finance-history .select
@@ -979,7 +985,58 @@
   .feedback-close
     width: 30px
     height: 30px
+  .card-bottom .card-bottom-spam
+    display: none
+  .masters-arrow
+    opacity: 1
+  .forcustomer-awards-container
+    padding-left: 10px
+  //MESSAGE, WHAT`S NEW
+  .messages-content__chats__item__number
+    font-size: 8px
+    padding: 0 3px
+    line-height: 11px
+  .avatar-rectangle
+    width: 26px
+    min-width: 26px
+    height: 34px
+  .messages-content__chats__item__right__top a
+    font-size: 10px
+  .whats-new__post__date, .whats-new__post__text p, .messages-content__chats__item__right__top__bottom a, .sender-title
+    font-size: 12px
+  .whats-new__post__title, .whats-new__post__link
+    font-size: 14px
+  .masters-top-left
+    width: 100%
+  .finance-feedback-drop, .finance-feedback .finance-feedback-flex
+    width: calc(100% - 230px)
+  .finance-feedback-row .finance-feedback-first, .finance-feedback-flex .finance-feedback-first
+    width: 230px
+  .header-tooltip
+    @include small-text
+    padding: 5px
+    top: calc(100% - 5px)
 @media only screen and (max-width : 767px)
+  .range-slider-row
+    margin-top: 0
+  .header-tooltip
+    display: none
+  .finance-feedback-top
+    padding: 10px
+    .text
+      display: none
+    .finance-feedback-first
+      display: block
+      text-transform: capitalize
+      span
+        display: none
+  .finance-feedback-table
+    padding: 0 10px
+  .masters-top-left
+    flex-direction: column
+    align-items: flex-start
+  .masters-search
+    max-width: 100%
   .forcustomer-info-content:before
     height: 43px
   .customer-left
@@ -1122,13 +1179,12 @@
     margin-top: 10px
   .title-18
     @include normal-text
-  .slick-slide
-    width: 100%
-    max-width: 300px
-  .slick-slide.gt1 .slide
-    transform: translate(-30%, 0) scale(0.7)
-  .slick-slide.lt1 .slide
-    transform: translate(30%, 0) scale(0.7)
+  .masters .swiper-slide
+    display: flex
+    justify-content: center
+    .slide
+      width: 100%
+      margin: 0
   .masters-row
     padding: 10px
   .masters-review
@@ -1339,7 +1395,7 @@
   .breadcrumbs-link, .questions .text-14, .relinking-row .blue
     font-size: 9px
     line-height: 12px
-  .masters-arrow
+  .masters-btn
     display: none
   .masters-slider
     margin-right: -10px
@@ -1602,7 +1658,7 @@
       position: absolute
       top: -5px
       right: 0
-  .filter .text, .select-item, .select-option .text-14
+  .filter .text
     font-size: 10px
   .select-option .text-14
     line-height: 13px
@@ -1922,6 +1978,8 @@
         width: calc(100% - 78px)
       .title-18
         margin: 5px 0
+      .card-price
+        background: none
   .card-row
     background: #F5F6FA
     padding: 3px 7px 10px 10px
@@ -1989,11 +2047,10 @@
     opacity: 0
     pointer-events: none
     transition: all 0.3s ease
+    -webkit-overflow-scrolling: touch
     &.active
       opacity: 1
       pointer-events: auto
-  .master-filter
-    max-width: 225px
   .dropdown-lv3-content
     padding-top: 10px
     max-height: 182px
@@ -2003,38 +2060,10 @@
       transform: rotate(45deg)
       width: 12px
       height: 12px
-  .dropdown-item
-    height: 34px
   .master-filter-main.active .dropdown-plus:after
     transform: translate(-50%, -50%) rotate(0deg)
-  .dropdown .text, .dropdown-label .text-14, .dropdown-lv2-categories .text-14
-    font-size: 10px
-    line-height: 13px
-  .dropdown-search, .dropdown-search-location
-    font-size: 10px
-    line-height: 13px
-    &::-webkit-input-placeholder
-      font-size: 10px
-      line-height: 13px
-    &:-moz-placeholder
-      font-size: 10px
-      line-height: 13px
-    &::-moz-placeholder
-      font-size: 10px
-      line-height: 13px
-    &:-ms-input-placeholder
-      font-size: 10px
-      line-height: 13px
-  .dropdown-check-all
-    font-size: 9px
-    line-height: 12px
   .dropdown-category .text
     line-height: 19px
-  .range-slider-row input, .range-slider-field:before, .range-slider-field:after, .dropdown-row input
-    font-size: 10px
-  .range-slider-field:before, .range-slider-field:after
-    line-height: 26px
-    top: 1px
   .dropdown-lv2
     padding: 5px 10px 10px 10px
   .dropdown-col
@@ -2083,7 +2112,7 @@
     background: #F5F6FA
     border-radius: 0 0 5px 5px
   .feedback-filter
-    max-width: 225px
+    max-width: 100%
     border-radius: 0 0 5px 5px
     .select
       padding: 0 10px
@@ -2104,14 +2133,98 @@
     display: block
   .feedback-link
     padding: 10px 20px
-    .text-14
-      font-size: 10px
-      line-height: 13px
-  .feedback-link:before
-    border-color: transparent #495F94 transparent transparent
+  .dropdown-search-drop
+    max-width: 100%
+    width: 100%
+  .masters-arrow-prev
+    left: 10px
+  .masters-arrow-next
+    right: 10px
+  .masters .swiper-slide
+    .slide
+      min-width: auto
+  .finance-feedback .text, .finance-feedback .text-14
+    font-size: 10px
+    line-height: 13px
+@media screen and (max-width: 500px)
+  //MESSAGES, WHAT`S NEW
+  .messages
+    width: 100%
+    height: 100vh
+    background: rgba(61, 64, 76, 0.6)
+    right: 0
+    -webkit-transition: all ease 0.8s
+    -o-transition: all ease 0.8s
+    transition: all ease 0.8s
+  .messages-container
+    width: 100%
+    height: 100%
+    border-radius: 0
+    position: absolute
+    bottom: 0
+    left: 0
+  .messages-content__chats__list__items
+    width: 100%
+    max-width: 100%
+  .messages-content__chats__item
+    margin: 0 20px
+  .messages-content__chats__item__right__top
+    justify-content: space-between
+    padding-right: 10px
+  .messages-content__user-chat-bar-list
+    min-width: unset
+  .messages-content__user-chat__sender
+    padding: 10px 15px
+  .messages-content__user-chat
+    height: calc(100% - 45px)
+  .messages-content__user-chat-bar-list
+    padding: 10px 10px 10px 15px
+  .whats-new__container, .whats-new__list
+    width: 100%
+  .whats-new__title
+    font-size: 16px
+  .whats-new__post
+    margin: 0 10px 10px
+  .whats-new__post__body
+    padding: 10px 10px 0
+  .whats-new__post__status, .whats-new__post__date, .whats-new__post__text p, .sender-title, .whats-new__post__sender__form input, .whats-new__post__title, .whats-new__post__link
+    font-size: 14px
+  .whats-new__post__sender__form input
+    padding: 9px 10px
+    line-height: 12px
+  .whats-new__post__sender__form button
+    height: 30px
+    width: 30px
+    min-width: 30px
+  .whats-new__post__sender__form button svg
+    width: 13px
+    height: 11px
+  .masters-arrow
+    display: none
+  .finance-feedback-row
+    display: block
+  .finance-feedback-container .text-small
+    display: inline-block
+  .finance-feedback-row .text-14
+    max-width: 100%!important
+    width: auto
+    padding: 0 10px 0 0
+    display: flex
+    justify-content: flex-start
+  .finance-feedback-drop
+    width: 100%
+    padding: 5px 0
+    flex-wrap: wrap
 @media only screen and (max-width : 480px)
   .customer-verified-row
     width: 50%
+  .masters .swiper-slide
+    display: flex
+    .slide
+      min-width: 280px
+      margin-left: 0
+
+
 
 
 

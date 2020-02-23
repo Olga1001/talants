@@ -223,15 +223,15 @@
     align-items: center
     cursor: pointer
     transition: all 0.3s ease
-    &:hover, &.active
+    &.active
       background: #4880FF
       .text
         color: #ffffff
       .dropdown-plus:before, .dropdown-plus:after
         background: #ffffff
-    &.active
       .dropdown-plus:after
         transform: translate(-50%, -50%) rotate(90deg)
+
   &-plus
     position: relative
     width: 13px
@@ -287,7 +287,7 @@
       padding: 10px 25px
       width: 100%
       position: relative
-      z-index: 4
+      z-index: 5
       background: #ffffff url("../img/search.svg") no-repeat left 5px center/15px 15px
       .dropdown-lv2-list
         position: relative
@@ -311,7 +311,7 @@
       position: absolute
       left: 0
       top: 0
-      z-index: 3
+      z-index: 4
       max-height: 263px
       overflow-y: auto
       @include container
@@ -380,6 +380,7 @@
     &.active
       opacity: 1
       pointer-events: auto
+      display: block
     &-back
       display: flex
       align-items: center
@@ -459,10 +460,25 @@
       font-size: 16px
       line-height: 19px
       color: #4880FF
-.amount
-  width: 100px
-  @include container
-  padding: 6px 10px 4px
+      border-radius: 5px
+      text-align: right
+      position: relative
+      z-index: 1
+
+  &-amount
+    position: relative
+    &:before
+      content: 'км'
+      position: absolute
+      right: 10px
+      top: 0
+      line-height: 19px
+      font-family: "ProximaNova-Regular", sans-serif
+      font-size: 16px
+      padding: 6px 0 4px
+      color: #4880FF
+      z-index: 3
+      pointer-events: none
 .ui-widget.ui-widget-content
   border: none
 .ui-slider-horizontal
@@ -571,6 +587,7 @@
       color: #4880FF
   .text-14
     color: #6C7185
+    transition: all 0.3s ease
   &-select
     margin: 0 20px 0 30px
     position: relative
@@ -584,13 +601,24 @@
     svg
       margin-left: 5px
       transition: all 0.3s ease
-    &.active
+    &.active,  &:hover
       .text-14
         color: #4880FF
+      svg path
+          fill: #4880FF
+    &.active
       svg
         transform: scale(1,-1)
-        path
-          fill: #4880FF
+    &-count
+      font-family: "ProximaNova-Regular", sans-serif
+      font-size: 12px
+      line-height: 15px
+      color: #FFFFFF
+      background: #FF855F
+      border-radius: 2px
+      min-width: 23px
+      text-align: center
+      margin-right: 5px
   &-row
     display: flex
     justify-content: space-between
@@ -598,6 +626,9 @@
     cursor: pointer
     &:last-child
       margin-bottom: 0
+    &:hover, &.active
+      .text-14
+        color: #4880FF
   &-search
     display: flex
     justify-content: flex-end
@@ -650,45 +681,39 @@
       &:focus ~ .sorting-search-btn
         pointer-events: auto
 
+.amount
+  width: 100px
+  padding: 6px 32px 4px 10px
+  &:focus
+    @include container
+    z-index: 2
 .range-slider
   &-row
     display: flex
-    justify-content: space-between
-    margin-top: 16px
-    input
-      background: #F5F6FA
-      border-radius: 5px
-      width: 120px
-      color: #6C7185
-      font-size: 14px
-      line-height: 19px
-      padding: 5px 40px 5px 32px
-      font-family: "SegoeUI", sans-serif
-  &-field
+    justify-content: flex-end
     position: relative
-    &:before, &:after
-      position: absolute
-      left: 10px
-      top: 0
-      line-height: 29px
-      font-family: "SegoeUI", sans-serif
-      color: #6C7185
-      font-size: 14px
-    &:after
-      content: ' руб.'
-      left: auto
-      right: 10px
-    &:first-child
-      &:before
-        content: 'От'
-    &:last-child
-      &:before
-        content: 'До'
-
+    input
+      padding: 10px 5px
+      width: 40px
+      text-align: center
+      &:focus
+        @include container
+    .text
+      color: #4880FF
+      line-height: 19px
+      padding: 0 0 5px
+  &-field
+    display: flex
+    align-items: center
+    position: relative
+    margin-left: 5px
 
 .card
   margin-bottom: 15px
   transition: all 0.3s ease
+  &.active
+    .card-red, .card-bottom-row .blue
+      display: none
   &-container
     @include container
     padding: 15px 20px 10px 20px
@@ -721,6 +746,7 @@
   .title-18
     transition: all 0.3s ease
     margin-bottom: 8px
+    cursor: pointer
   &-price
     position: absolute
     right: 20px
@@ -729,6 +755,7 @@
     font-size: 24px
     line-height: 32px
     color: #4880FF
+    transition: all 0.3s ease
   &-top
     display: flex
     align-items: baseline
@@ -750,7 +777,7 @@
       display: flex
       flex-wrap: wrap
       align-items: center
-      width: calc(100% - 200px)
+      width: calc(100% - 120px)
       .blue
         margin-right: 30px
     .text-small

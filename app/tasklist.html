@@ -13,10 +13,10 @@
 </head>
 <body>
 
-<!-- header.html -->
 
+<!-- header -->
 
-	<header class="header">
+<header class="header">
 		<div class="container">
 			<div class="header-flex">
 				<div class="burger">
@@ -34,6 +34,7 @@
 					<div class="header-top">
 						<a href="#" class="header-logo">
 							<img src="img/logo.png" alt="LOGO" class="header-logo-img">
+							<span class="header-logo-down">безопасные услуги</span>
 						</a>
 					</div>
 					<ul class="header-menu">
@@ -80,7 +81,7 @@
 						<a href="#" class="btn-blue" rel="nofollow">Регистрация</a>
 					</div>
 					<div class="header-authorized active">
-						<div class="header-right-item">
+						<div class="header-right-item header__user-panel__messages">
 							<div class="header-right-link" rel="nofollow">
 								<span class="header-right-have active"></span>
 
@@ -277,135 +278,504 @@
 		</div>
 	</header>
 
-
-<div class="chats">
-	<div class="chats-top">
-		<p class="text">Чаты</p>
-		<div class="chats-close"></div>
-	</div>
-	<div class="chats-block">
-		<ul class="chats-content ">
-			<li class="chats-row">
-				<div class="chats-col">
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-					<span class="chats-number">3</span>
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-						<a href="#" class="text-small chats-link">Сделать ремонт в ванной комнате для...</a>
+<!-- header massages -->
+<div class="messages">
+	<div class="messages-container">
+		<div class="messages__top">Чаты
+			<div class="messages__close">
+				<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M5.42678 5.95997L0.115276 11.2715C-0.0322861 11.419 -0.0322861 11.6581 0.115276 11.8057C0.188964 11.8795 0.285714 11.9163 0.382276 11.9163C0.479026 11.9163 0.575589 11.8795 0.649276 11.8057L6.00071 6.45422L11.3522 11.8057C11.426 11.8795 11.5226 11.9163 11.6192 11.9163C11.7157 11.9163 11.8125 11.8795 11.8862 11.8057C12.0337 11.6581 12.0337 11.419 11.8862 11.2715L6.57484 5.95997L11.8897 0.644719C12.0373 0.497156 12.0373 0.258094 11.8897 0.110531C11.7422 -0.0368438 11.5031 -0.0368438 11.3557 0.110531L6.0009 5.46572L0.645526 0.110719C0.497964 -0.0366563 0.259089 -0.0366563 0.111526 0.110719C-0.0360361 0.258281 -0.0360361 0.497344 0.111526 0.644906L5.42678 5.95997Z"
+							fill="white" stroke="white" stroke-width="0.5"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="messages-content">
+			<div class="messages-content__chats">
+				<div class="messages-content__chats__list">
+					<div class="messages-content__chats__list__items">
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-row" href="#"><img
+									src="img/chat-photo2.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-row" href="#"><img
+									src="img/chat-photo2.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-row" href="#"><img
+									src="img/chat-photo2.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
+						<div class="messages-content__chats__item">
+							<div class="messages-content__chats__item__left">
+								<div class="messages-content__chats__item__number">3</div><a class="avatar avatar-rectangle"
+																							 href="#"><img src="img/chat-photo.png" alt="/"></a>
+							</div>
+							<div class="messages-content__chats__item__right">
+								<div class="messages-content__chats__item__right__top"><a
+										class="messages-content__chats__item__nickname" href="#">Ирина Д.</a><a
+										class="messages-content__chats__item__project" href="#">Сделать ремонт в ванной комнате
+									для...</a></div>
+								<div class="messages-content__chats__item__right__top__bottom"><a href="#">Добрый день. Свободны?
+									Мне нужно сделать что-то, бачок раковину и тд больше текста больше текста больше текста больше
+									текста больше текста</a></div>
+							</div>
+						</div>
 					</div>
-					<p class="text-14">Добрый день. Свободны? Мне нужно сдела...</p>
 				</div>
-			</li>
-			<li class="chats-row">
-				<div class="chats-col">
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-					<span class="chats-number">3</span>
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-						<a href="#" class="text-small chats-link">Сделать ремонт в ванной комнате для...</a>
+				<div class="messages-content__chats__show-all"><span>Показать всё (15)</span></div>
+			</div>
+			<div class="messages-content__user-chat">
+				<div class="messages-content__user-chat__panel">
+					<div class="messages-content__user-chat__panel__back">
+						<svg width="9" height="17" viewbox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8 1L1 8.37705L8 16" stroke="#6C7185"></path>
+						</svg>
 					</div>
-					<p class="text-14">Добрый день. Свободны? Мне нужно сдела...</p>
-				</div>
-			</li>
-			<li class="chats-row">
-				<div class="chats-col">
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-					<span class="chats-number">3</span>
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-						<a href="#" class="text-small chats-link">Сделать ремонт в ванной комнате для...</a>
+					<div class="avatar-rectangle"><img src="img/chat-photo.png"></div>
+					<div class="messages-content__user-chat__panel__info"><a class="username" href="#">Ирина Д.</a><a
+							class="messages-content__user-chat__panel__info__task" href="#">Сделать ремонт в ванной комнате
+						для...</a></div>
+					<div class="messages-content__user-chat__panel__menu">
+						<svg width="4" height="20" viewbox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="2" cy="2" r="2"></circle>
+							<circle cx="2" cy="10" r="2"></circle>
+							<circle cx="2" cy="18" r="2"></circle>
+						</svg>
 					</div>
-					<p class="text-14">Добрый день. Свободны? Мне нужно сдела...</p>
+					<div class="messages-content__user-chat__panel__menu-drop"><a href="#">Посмотреть информацию о чате</a><a
+							href="#">Выключить уведомления</a><a href="#">Заблокировать</a></div>
 				</div>
-			</li>
-			<li class="chats-row">
-				<div class="chats-col">
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-					<span class="chats-number">3</span>
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-						<a href="#" class="text-small chats-link">Сделать ремонт в ванной комнате для...</a>
-					</div>
-					<p class="text-14">Добрый день. Свободны? Мне нужно сдела...</p>
-				</div>
-			</li>
-			<li class="chats-row">
-				<div class="chats-col">
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-					<span class="chats-number">3</span>
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-						<a href="#" class="text-small chats-link">Сделать ремонт в ванной комнате для...</a>
-					</div>
-					<p class="text-14">Добрый день. Свободны? Мне нужно сдела...</p>
-				</div>
-			</li>
-			<li class="chats-row">
-				<div class="chats-col">
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-					<span class="chats-number">3</span>
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-						<a href="#" class="text-small chats-link">Сделать ремонт в ванной комнате для...</a>
-					</div>
-					<p class="text-14">Добрый день. Свободны? Мне нужно сдела...</p>
-				</div>
-			</li>
-		</ul>
-		<ul class="chats-content chats-user active">
-			<li class="chats-user-row">
-				<div class="chats-col">
-					<div class="back-gray"><img src="img/arrow-back.svg" alt="back" class="back-gray-icon"></div>
-					<img src="img/foto2.jpg" alt="foto" class="chats-img">
-				</div>
-				<div class="chats-col">
-					<div class="chats-up">
-						<p class="text-small">Ирина Д.</p>
-					</div>
-					<a href="#" class="text-14 chats-link">Сделать ремонт в ванной комнате для...</a>
-				</div>
-				<div class="chats-setting">
-					<div class="chats-setting-circle"></div>
-					<div class="chats-setting-circle"></div>
-					<div class="chats-setting-circle"></div>
-					<div class="chats-setting-drop">
-						<a href="#" class="text-14">Посмотреть информацию о чате</a>
-						<a href="#" class="text-14">Выключить уведомления</a>
-						<a href="#" class="text-14">Заблокировать</a>
+				<!--обозначаем блок когда печатает собеседник классом messages-content__user-chat-bar__companion-typing
+                  -->
+				<div class="messages-content__user-chat-bar messages-content__user-chat-bar__companion-typing">
+					<div class="messages-content__user-chat-bar-list">
+						<div class="messages__message__more">Показать <a href="#">ещё 5</a> сообщений или <a href="#">все 29</a>
+						</div>
+						<div class="messages__message messages__message_user read"><span>Добрый день. Вы отозвались на заказ
+                    “Ремонт раковины за 2 копейки. Подскажите, вы точно сделает ремонт за 2 копейки?</span></div>
+						<div class="messages__message messages__message_user read"><span>Добрый день. Вы отозвались на заказ
+                    “Ремонт раковины за 2 копейки. <a href="#">Подскажите, вы точно сделает ремонт за 2
+                      копейки?</a></span></div>
+						<div class="messages__message messages__message_user unread">
+							<span>Добрый день. Вы отозвались.</span>
+						</div>
+						<div class="messages__message messages__message_user messages__message_file1 unread">
+							<span><img src="img/file1.svg" alt=""> Как чинить раковину.doc</span>
+						</div>
+						<div class="messages__message messages__message_user messages__message_file2 unread">
+							<span><img src="img/file2.svg" alt=""> Как чинить раковину.doc</span>
+						</div>
+						<div class="messages__message messages__message_user messages__message_file2 unread">
+							<span>Так выглядит ссылка <a href="https://docs.google.com/spreadsheets">https://docs.google.com/spreadsheets</a></span>
+						</div>
+						<div class="messages__message__info">17:46</div>
+						<div class="messages__message__new"><span>У вас <a href="">3 новых сообщения</a></span></div>
+						<div class="messages__message messages__message_companion unread"><span>Конечно, я ж не балабол</span>
+						</div>
+						<div class="messages__message messages__message__photos modal-gallery">
+							<!--здесь прописываем одно из фото которые прячем
+                              -->
+							<!--используем класс messages__message__photos__photo что-бы спрятать ненужные фотографии(в галереи отображатся будут)
+                              --><a class="messages__message__photos__photo messages__message__photos__photo_hide modal-one"
+						  href="img/image.jpg" title="изображение"><img src="img/image.jpg" alt=""></a><a
+								class="messages__message__photos__photo modal-one" href="img/image.jpg" title="изображение"><img
+								src="img/image.jpg" alt=""></a><a class="messages__message__photos__photo modal-one"
+																		 href="img/image2.jpg" title="изображение"><img src="img/image2.jpg" alt=""></a><a
+								class="messages__message__photos__photo modal-one" href="img/image.jpg" title="изображение"><img
+								src="img/image.jpg" alt=""></a><a class="messages__message__photos__more-photos modal-one"
+																		 href="img/image2.jpg" title="изображение">+2</a>
+						</div>
+						<div class="messages__message messages__message_companion unread"><span><a href="#">Мне уже
+                      выезжать?</a></span></div>
+						<div class="messages__message__info">Сергей Антонюк 17:48</div>
+						<div class="messages-typing">
+							<div class="messages-typing-bar">
+								<div class="sk-three-bounce">
+									<div class="sk-bounce-1 sk-child"></div>
+									<div class="sk-bounce-2 sk-child"></div>
+									<div class="sk-bounce-3 sk-child"></div>
+								</div>
+							</div>
+							<div class="messages-typing-name">Сергей пишет...</div>
+						</div>
 					</div>
 				</div>
-			</li>
-			<li class="chats-message">
-				<div class="chats-window">
-
-				</div>
-				<form class="chats-sender">
-					<input type="text" class="chats-input" placeholder="Напишите сообщение...">
-					<label class="chats-label">
-						<input type="file" multiple="" class="chats-loader">
-						<img src="img/file.svg" alt="file" class="chats-icon">
-					</label>
-					<button type="submit" class="chats-send"><img src="img/send.svg" alt="send" class="chats-send-img"></button>
+				<form class="messages-content__user-chat__sender" action="">
+					<div class="messages-content__user-chat__sender__input-bar">
+						<input type="text" placeholder="Напишите сообщение...">
+						<label>
+							<input type="file" multiple="">
+							<svg width="18" height="16" viewbox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M3.42213 15.9514C2.6026 15.9514 1.83254 15.632 1.25338 15.053C0.0577124 13.8572 0.0577124 11.9114 1.25338 10.7157L10.7346 1.23405C11.4984 0.469402 12.5151 0.0488281 13.596 0.0488281C14.677 0.0488281 15.6936 0.469402 16.4575 1.23405C17.2221 1.99849 17.6432 3.01454 17.6432 4.09538C17.6432 5.17644 17.2226 6.19245 16.4581 6.95643L8.99436 14.4195C8.77028 14.6435 8.40739 14.6435 8.18341 14.4195C7.95933 14.1955 7.95933 13.8326 8.18341 13.6084L15.647 6.14538C16.1949 5.59764 16.4961 4.86952 16.4961 4.09538C16.4961 3.32138 16.1942 2.5928 15.6465 2.045C15.0987 1.49727 14.3706 1.19584 13.596 1.19584C12.8215 1.19584 12.0934 1.49727 11.5455 2.045L2.06443 11.5267C1.3162 12.2755 1.3162 13.4932 2.06443 14.2419C2.79023 14.9667 4.05389 14.9667 4.77965 14.2419L11.1461 7.87496C11.3192 7.70185 11.4184 7.46222 11.4184 7.21796C11.4184 6.97028 11.3216 6.73681 11.1456 6.56092C10.7839 6.19913 10.1941 6.19804 9.83228 6.56092L5.48426 10.9094C5.26031 11.1336 4.89725 11.1336 4.67331 10.9094C4.44922 10.6855 4.44922 10.3224 4.67331 10.0985L9.02118 5.75001C9.82996 4.94128 11.1468 4.94128 11.9566 5.75001C12.3493 6.14256 12.5654 6.66407 12.5654 7.21799C12.5654 7.76457 12.3437 8.29947 11.9572 8.68591L5.59074 15.053C5.01158 15.632 4.24148 15.9514 3.42213 15.9514Z">
+								</path>
+							</svg>
+						</label>
+					</div>
+					<button>
+						<svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+									d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z"
+									fill="white"></path>
+						</svg>
+					</button>
 				</form>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
-
 </div>
 
-
+<!-- header what`s new -->
+<div class="whats-new">
+	<div class="whats-new__container">
+		<div class="whats-new__top">
+			<div class="whats-new__title">Что нового?</div>
+			<div class="whats-new__close">
+				<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+							d="M7.23542 7.94638L0.153417 15.0284C-0.043333 15.2251 -0.043333 15.5439 0.153417 15.7406C0.251667 15.8391 0.380667 15.8881 0.509417 15.8881C0.638417 15.8881 0.767167 15.8391 0.865417 15.7406L8.00067 8.60538L15.1359 15.7406C15.2344 15.8391 15.3632 15.8881 15.4919 15.8881C15.6207 15.8881 15.7497 15.8391 15.8479 15.7406C16.0447 15.5439 16.0447 15.2251 15.8479 15.0284L8.76617 7.94638L15.8527 0.859381C16.0494 0.662631 16.0494 0.343881 15.8527 0.147131C15.6559 -0.0493691 15.3372 -0.0493691 15.1407 0.147131L8.00092 7.28738L0.860417 0.147381C0.663667 -0.0491191 0.345167 -0.0491191 0.148417 0.147381C-0.048333 0.344131 -0.048333 0.662881 0.148417 0.859631L7.23542 7.94638Z"
+							fill="white" stroke="white"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="whats-new__content">
+			<div class="whats-new__list">
+				<div class="whats-new__post">
+					<div class="whats-new__post__body">
+						<div class="whats-new__post__top">
+							<div class="whats-new__post__status whats-new__post__status_update">Обновление</div>
+							<div class="whats-new__post__date">29.06.2019</div>
+						</div>
+						<div class="whats-new__post__title">Новые стикеры для переписки!</div><img class="whats-new__post__img"
+																								   src="img/post_photo.jpg">
+						<div class="whats-new__post__text">
+							<p>Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации
+								дальнейших направлений развития.</p>
+							<p>Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует
+								подготовки и реализации направлений прогрессивного развития.</p>
+							<p>С другой стороны постоянный количественный рост и сфера нашей активности представляет собой
+								интересный эксперимент проверки направлений прогрессивного развития.</p>
+						</div><a class="whats-new__post__link" href="#">Протестить новые стикеры</a>
+						<div class="sender-title">Пожалуйста, оцените важность обновления:</div>
+						<div class="sender-title">Спасибо большое! Ваша оценка очень важна для нас.</div>
+					</div>
+					<div class="whats-new__post__sender">
+						<div class="whats-new__post__sender__rating"><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description grey">Плохо</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z"
+										fill="#6C7185"></path>
+							</svg>
+						</a><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description blue">Не важно</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z"
+										fill="#4880FF"></path>
+							</svg>
+						</a><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description gren">Понравилось</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z"
+										fill="#33C093"></path>
+							</svg>
+						</a></div>
+						<form class="whats-new__post__sender__form" action="">
+							<input type="text" placeholder="Поделитись мнением">
+							<button>
+								<svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+											d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z"
+											fill="white"></path>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="whats-new__post">
+					<div class="whats-new__post__body">
+						<div class="whats-new__post__top">
+							<div class="whats-new__post__status whats-new__post__status_stock">Акция</div>
+							<div class="whats-new__post__date">29.06.2019</div>
+						</div>
+						<div class="whats-new__post__title">Новые стикеры для переписки!</div><img class="whats-new__post__img"
+																								   src="img/post_photo.jpg">
+						<div class="whats-new__post__text">
+							<p>Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации
+								дальнейших направлений развития.</p>
+							<p>Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует
+								подготовки и реализации направлений прогрессивного развития.</p>
+							<p>С другой стороны постоянный количественный рост и сфера нашей активности представляет собой
+								интересный эксперимент проверки направлений прогрессивного развития.</p>
+						</div><a class="whats-new__post__link" href="#">Протестить новые стикеры</a>
+						<div class="sender-title">Пожалуйста, оцените важность обновления:</div>
+						<div class="sender-title">Спасибо большое! Ваша оценка очень важна для нас.</div>
+					</div>
+					<div class="whats-new__post__sender">
+						<div class="whats-new__post__sender__rating"><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description grey">Плохо</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z"
+										fill="#6C7185"></path>
+							</svg>
+						</a><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description blue">Не важно</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z"
+										fill="#4880FF"></path>
+							</svg>
+						</a><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description gren">Понравилось</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z"
+										fill="#33C093"></path>
+							</svg>
+						</a></div>
+						<form class="whats-new__post__sender__form" action="">
+							<input type="text" placeholder="Поделитись мнением">
+							<button>
+								<svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+											d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z"
+											fill="white"></path>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="whats-new__post">
+					<div class="whats-new__post__body">
+						<div class="whats-new__post__top">
+							<div class="whats-new__post__status whats-new__post__status_ad">Обьявление</div>
+							<div class="whats-new__post__date">29.06.2019</div>
+						</div>
+						<div class="whats-new__post__title">Новые стикеры для переписки!</div><img class="whats-new__post__img"
+																								   src="img/post_photo.jpg">
+						<div class="whats-new__post__text">
+							<p>Разнообразный и богатый опыт укрепление и развитие структуры способствует подготовки и реализации
+								дальнейших направлений развития.</p>
+							<p>Не следует, однако забывать, что начало повседневной работы по формированию позиции способствует
+								подготовки и реализации направлений прогрессивного развития.</p>
+							<p>С другой стороны постоянный количественный рост и сфера нашей активности представляет собой
+								интересный эксперимент проверки направлений прогрессивного развития.</p>
+						</div><a class="whats-new__post__link" href="#">Протестить новые стикеры</a>
+						<div class="sender-title">Пожалуйста, оцените важность обновления:</div>
+						<div class="sender-title">Спасибо большое! Ваша оценка очень важна для нас.</div>
+					</div>
+					<div class="whats-new__post__sender">
+						<div class="whats-new__post__sender__rating"><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description grey">Плохо</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.54 60 60 46.5425 60 30C60 13.4575 46.54 0 30 0ZM40 15C42.76 15 45 17.2375 45 20C45 22.76 42.76 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.76 34.9999 20C35 17.2375 37.2375 15 40 15ZM20 15C22.76 15 25.0001 17.2375 25.0001 20C25.0001 22.76 22.76 25.0001 20 25.0001C17.2376 25.0001 15 22.76 15 20C15 17.2375 17.2375 15 20 15ZM44.9525 44.83C43.6676 45.325 42.2175 44.6775 41.7251 43.3875C39.8375 38.45 35.015 35 30.0001 35C24.9802 35 20.1577 38.45 18.2701 43.3925C17.8901 44.39 16.9402 45.0026 15.9352 45.0026C15.6376 45.0026 15.3376 44.9476 15.0451 44.8351C13.7551 44.3452 13.1077 42.9001 13.6001 41.6101C16.2075 34.775 22.9525 30 30 30C37.0425 30 43.785 34.7725 46.395 41.6025C46.8875 42.8925 46.2425 44.3375 44.9525 44.83Z"
+										fill="#6C7185"></path>
+							</svg>
+						</a><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description blue">Не важно</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM45 42.5H15C13.6175 42.5 12.5 41.3801 12.5 40.0001C12.5 38.6201 13.6175 37.5001 15 37.5001H45C46.3825 37.5001 47.5 38.6201 47.5 40.0001C47.5 41.38 46.3825 42.5 45 42.5Z"
+										fill="#4880FF"></path>
+							</svg>
+						</a><a class="whats-new__post__sender__rating__item" href="">
+							<div class="whats-new__post__sender__rating__item__description gren">Понравилось</div>
+							<svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+										d="M30 0C13.4575 0 0 13.4575 0 30C0 46.5425 13.4575 60 30 60C46.5425 60 60 46.5425 60 30C60 13.4575 46.5425 0 30 0ZM40 15C42.7625 15 45 17.24 45 20C45 22.7625 42.7625 25.0001 40 25.0001C37.2375 25.0001 34.9999 22.7626 34.9999 20C35 17.24 37.2375 15 40 15ZM20 15C22.7625 15 25.0001 17.24 25.0001 20C25.0001 22.7625 22.7626 25.0001 20 25.0001C17.2376 25.0001 15 22.7626 15 20C15 17.24 17.2375 15 20 15ZM30 50C20.6775 50 12.5 41.8226 12.5 32.5001C12.5 31.1201 13.62 30.0001 15 30.0001C16.38 30.0001 17.5 31.1201 17.5 32.5001C17.5 39.0425 23.4575 45 30 45C36.5425 45 42.5 39.0425 42.5 32.5C42.5 31.12 43.62 30 45 30C46.38 30 47.5 31.12 47.5 32.5C47.5 41.8225 39.3225 50 30 50Z"
+										fill="#33C093"></path>
+							</svg>
+						</a></div>
+						<form class="whats-new__post__sender__form" action="">
+							<input type="text" placeholder="Поделитись мнением">
+							<button>
+								<svg width="20" height="18" viewbox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+											d="M18.8091 7.21633L2.67258 0.520624C1.99278 0.238515 1.22477 0.362617 0.668325 0.844335C0.111879 1.32613 -0.120855 2.06848 0.0610199 2.78164L1.49731 8.41414H8.52958C8.85317 8.41414 9.11555 8.67648 9.11555 9.00012C9.11555 9.32371 8.85321 9.58609 8.52958 9.58609H1.49731L0.0610199 15.2186C-0.120855 15.9318 0.11184 16.6741 0.668325 17.1559C1.2259 17.6386 1.99399 17.7611 2.67262 17.4796L18.8091 10.7839C19.5438 10.4791 20.0002 9.79555 20.0002 9.00012C20.0002 8.20469 19.5438 7.52113 18.8091 7.21633Z"
+											fill="white"></path>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="overlay"></div>
 <div class="master">
         <div class="container">
             <div class="master-top">
@@ -709,7 +1079,9 @@
                                         <div class="dropdown-col">
                                             <div class="dropdown-row">
                                                 <p class="text">Укажите радиус поиска</p>
-                                                <input type="text" class="amount" value="15">
+                                                <div class="dropdown-amount">
+                                                    <input type="text" class="amount" value="15 км">
+                                                </div>
                                             </div>
                                             <div class="range"></div>
                                         </div>
@@ -718,16 +1090,21 @@
                                         <div class="dropdown-col">
                                             <div class="dropdown-row">
                                                 <p class="text">Ставка за услугу</p>
+                                                <div class="range-slider-row">
+                                                    <div class="range-slider-field">
+                                                        <p class="text"><span class="blue">от </span></p>
+                                                        <input type="number" class="amount1" value="100">
+                                                        <p class="text"><span class="blue">р. </span></p>
+                                                    </div>
+                                                    <div class="range-slider-field">
+                                                        <p class="text"><span class="blue"> до</span></p>
+                                                        <input type="number" class="amount2" value="280">
+                                                        <p class="text"><span class="blue">тыс. р.</span></p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="range-slider"></div>
-                                            <div class="range-slider-row">
-                                                <div class="range-slider-field">
-                                                    <input type="text" class="amount1" value="500">
-                                                </div>
-                                                <div class="range-slider-field">
-                                                    <input type="text" class="amount2" value="5000">
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </li>
                                     <li class="dropdown-list">
@@ -829,7 +1206,7 @@
                                     </svg>
                                 </div>
                                 <ul class="sorting-drop">
-                                    <li class="sorting-row">
+                                    <li class="sorting-row active">
                                         <p class="text-14">Сегодня</p>
                                         <p class="text-14">90</p>
                                     </li>
@@ -853,13 +1230,14 @@
                             </div>
                             <div class="sorting-select sorting-select-status">
                                 <div class="sorting-item">
+                                    <div class="sorting-item-count">+14</div>
                                     <p class="text-14">По статусу <span class="sorting-hide"> заказа</span></p>
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.40594 7.17394L0.246292 2.01412C-0.0820933 1.68589 -0.0820933 1.15373 0.246292 0.82566C0.574386 0.497566 1.10652 0.497566 1.43459 0.82566L6.00009 5.3913L10.5654 0.825793C10.8937 0.497699 11.4257 0.497699 11.7538 0.825793C12.0821 1.15389 12.0821 1.68602 11.7538 2.01425L6.5941 7.17407C6.42998 7.33812 6.2151 7.42005 6.00011 7.42005C5.78502 7.42005 5.56999 7.33796 5.40594 7.17394Z" fill="#6C7185"/>
                                     </svg>
                                 </div>
                                 <ul class="sorting-drop">
-                                    <li class="sorting-row">
+                                    <li class="sorting-row active">
                                         <p class="text-14">Просмотрены</p>
                                         <p class="text-14">90</p>
                                     </li>
@@ -880,8 +1258,8 @@
                                         <p class="text-14">90</p>
                                     </li>
                                     <li class="sorting-row">
-                                        <p class="text-14 blue">Выбрали исполнителем +2</p>
-                                        <p class="text-14 blue">90</p>
+                                        <p class="text-14">Выбрали исполнителем <span class="blue">+2</span></p>
+                                        <p class="text-14">90</p>
                                     </li>
                                     <li class="sorting-row">
                                         <p class="text-14">На выполнении</p>
@@ -1640,6 +2018,7 @@
 <script src="js/bodyScrollLock.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/scrollbot.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

@@ -317,7 +317,9 @@
                                         <div class="dropdown-col">
                                             <div class="dropdown-row">
                                                 <p class="text">Укажите радиус поиска</p>
-                                                <input type="text" class="amount" value="15">
+                                                <div class="dropdown-amount">
+                                                    <input type="text" class="amount" value="15 км">
+                                                </div>
                                             </div>
                                             <div class="range"></div>
                                         </div>
@@ -326,16 +328,21 @@
                                         <div class="dropdown-col">
                                             <div class="dropdown-row">
                                                 <p class="text">Ставка за услугу</p>
+                                                <div class="range-slider-row">
+                                                    <div class="range-slider-field">
+                                                        <p class="text"><span class="blue">от </span></p>
+                                                        <input type="number" class="amount1" value="100">
+                                                        <p class="text"><span class="blue">р. </span></p>
+                                                    </div>
+                                                    <div class="range-slider-field">
+                                                        <p class="text"><span class="blue"> до</span></p>
+                                                        <input type="number" class="amount2" value="280">
+                                                        <p class="text"><span class="blue">тыс. р.</span></p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="range-slider"></div>
-                                            <div class="range-slider-row">
-                                                <div class="range-slider-field">
-                                                    <input type="text" class="amount1" value="500">
-                                                </div>
-                                                <div class="range-slider-field">
-                                                    <input type="text" class="amount2" value="5000">
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </li>
                                     <li class="dropdown-list">
@@ -437,7 +444,7 @@
                                     </svg>
                                 </div>
                                 <ul class="sorting-drop">
-                                    <li class="sorting-row">
+                                    <li class="sorting-row active">
                                         <p class="text-14">Сегодня</p>
                                         <p class="text-14">90</p>
                                     </li>
@@ -461,13 +468,14 @@
                             </div>
                             <div class="sorting-select sorting-select-status">
                                 <div class="sorting-item">
+                                    <div class="sorting-item-count">+14</div>
                                     <p class="text-14">По статусу <span class="sorting-hide"> заказа</span></p>
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.40594 7.17394L0.246292 2.01412C-0.0820933 1.68589 -0.0820933 1.15373 0.246292 0.82566C0.574386 0.497566 1.10652 0.497566 1.43459 0.82566L6.00009 5.3913L10.5654 0.825793C10.8937 0.497699 11.4257 0.497699 11.7538 0.825793C12.0821 1.15389 12.0821 1.68602 11.7538 2.01425L6.5941 7.17407C6.42998 7.33812 6.2151 7.42005 6.00011 7.42005C5.78502 7.42005 5.56999 7.33796 5.40594 7.17394Z" fill="#6C7185"/>
                                     </svg>
                                 </div>
                                 <ul class="sorting-drop">
-                                    <li class="sorting-row">
+                                    <li class="sorting-row active">
                                         <p class="text-14">Просмотрены</p>
                                         <p class="text-14">90</p>
                                     </li>
@@ -488,8 +496,8 @@
                                         <p class="text-14">90</p>
                                     </li>
                                     <li class="sorting-row">
-                                        <p class="text-14 blue">Выбрали исполнителем +2</p>
-                                        <p class="text-14 blue">90</p>
+                                        <p class="text-14">Выбрали исполнителем <span class="blue">+2</span></p>
+                                        <p class="text-14">90</p>
                                     </li>
                                     <li class="sorting-row">
                                         <p class="text-14">На выполнении</p>
@@ -1178,6 +1186,7 @@
 <script src="js/bodyScrollLock.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/scrollbot.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

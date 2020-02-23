@@ -52,10 +52,10 @@ gulp.task('libs-css', ['sass'], function(){
 });
 gulp.task('libs-js', function(){
   return gulp.src([
-      'app/libs/slick-master/slick/slick.min.js',
       'app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js',
       'app/libs/waypoints/lib/noframework.waypoints.min.js',
       'app/libs/jquery-ui-1.12.1.custom/jquery-ui.min.js',
+      'app/libs/swiper-master/package/js/swiper.min.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
