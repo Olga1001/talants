@@ -160,7 +160,7 @@ $(document).ready(function () {
     $(".header-right-link").on("click", function (e) {
         e.preventDefault();
         $(this).closest(".header-right-item").toggleClass('active').siblings().removeClass('active').removeClass('active-settings');
-        if (window.matchMedia("(max-width: 767px)").matches) {
+        if (window.matchMedia("(max-width: 991px)").matches) {
             if ( $(".header-right-item").hasClass('active')){
                 $(".overlay").addClass('active');
                 $.scrollLock(true);
@@ -173,6 +173,7 @@ $(document).ready(function () {
     $(".overlay").on("click", function (e) {
         $(this).removeClass('active');
         $(".header-right-item").removeClass('active').removeClass('active-settings');
+        $.scrollLock(false);
     });
     $(".header-akk-img, .header-akk-link").on("click", function (e) {
         e.preventDefault();
@@ -182,6 +183,15 @@ $(document).ready(function () {
                 $.scrollLock(true);
             } else {
                 $.scrollLock(false);
+            }
+        }
+        if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
+            if ( $(".header-right-item").hasClass('active')){
+                $.scrollLock(true);
+                $(".overlay").addClass('active');
+            } else {
+                $.scrollLock(false);
+                $(".overlay").removeClass('active');
             }
         }
     });
@@ -443,10 +453,10 @@ $(document).ready(function () {
             $(this).toggleClass('active').closest(".balance").siblings().find(".balance-select").removeClass('active');
         });
     } else {
-        $(".balance-select").onmouseover(function () {
+        $(".balance-select").mouseover(function () {
             $(this).closest(".balance-select").find(".balance-drop").addClass('active');
         });
-        $(".balance-select").onmouseout(function () {
+        $(".balance-select").mouseout(function () {
             $(this).closest(".balance-select").find(".balance-drop").removeClass('active');
         });
     }
@@ -507,7 +517,7 @@ $(document).ready(function () {
         }
         viewProducts(listHtml);
     }
-    productsHTML(getProductsListRange(products, 0, 5), 0, 10);
+    productsHTML(getProductsListRange(products, 1, 5), 1, 10);
 });
 $(document).ready(function () {
 
@@ -562,7 +572,7 @@ $(document).ready(function () {
         $(".range").slider('value', $(this).val());
     });
 
-    $(".range-slider-row input").on("click", function () {
+    $(".range-slider-row input, .amount").on("click", function () {
         $(this).val('');
     });
     $( function() {

@@ -952,9 +952,8 @@
   .master-right
     transform: translateY(-258px)
     margin-bottom: -258px
-  .finance-feedback .text, .finance-feedback .text-14
+  .finance-feedback .text, .finance-feedback .text-14, .finance-feedback-row .text-small
     @include small-text
-
   .finance-feedback
     padding: 0
   .finance-history .select
@@ -1023,13 +1022,6 @@
     display: none
   .finance-feedback-top
     padding: 10px
-    .text
-      display: none
-    .finance-feedback-first
-      display: block
-      text-transform: capitalize
-      span
-        display: none
   .finance-feedback-table
     padding: 0 10px
   .masters-top-left
@@ -2143,9 +2135,6 @@
   .masters .swiper-slide
     .slide
       min-width: auto
-  .finance-feedback .text, .finance-feedback .text-14
-    font-size: 10px
-    line-height: 13px
 @media screen and (max-width: 500px)
   //MESSAGES, WHAT`S NEW
   .messages
@@ -2201,6 +2190,7 @@
     height: 11px
   .masters-arrow
     display: none
+  //SETTING (FINANCE)
   .finance-feedback-row
     display: block
   .finance-feedback-container .text-small
@@ -2215,6 +2205,25 @@
     width: 100%
     padding: 5px 0
     flex-wrap: wrap
+  .finance-feedback-top
+    .text
+      display: none
+    .finance-feedback-first
+      display: block
+      text-transform: capitalize
+      span
+        display: none
+  .finance-feedback-flex
+    display: none
+  .finance-feedback-row
+    .text-14, .text-small
+      @include normal-text
+  .finance-feedback .finance-feedback-main
+    @include text
+  .finance-feedback .finance-feedback-first
+    font-size: 15px
+    line-height: 18px
+    padding: 0
 @media only screen and (max-width : 480px)
   .customer-verified-row
     width: 50%
