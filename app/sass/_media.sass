@@ -99,6 +99,10 @@
       justify-content: center
       .slide
         margin-left: 0
+  .home__mobile-img
+    right: 0
+    width: 210px
+    height: 175px
 @media only screen and (max-width : 991px)
   .header-logo-img
     height: 25px
@@ -1015,6 +1019,250 @@
     @include small-text
     padding: 5px
     top: calc(100% - 5px)
+  .home__search
+    padding-top: 10px
+  .home__title span
+    @include normal-text
+  .home__search-form
+    width: calc(100% - 20px)
+  .home__cards, .home__safe__task
+    margin: 30px 0
+  .home__title
+    font-size: 20px
+    line-height: 27px
+  .home__steps
+    padding: 10px
+  .home__steps-num
+    font-size: 24px
+    margin-right: 5px
+    line-height: 39px
+  .home__steps .text-14
+    @include small-text
+  .home__steps-icon
+    width: 32px
+    height: 32px
+    background-size: 10px 13px
+    border-width: 3px
+    margin-right: 5px
+  .home__search-submit
+    width: 115px
+  .home__search-input
+    width: calc(100% - 115px)
+  .home__steps-row:first-child:before
+    left: 10px
+  .home__cards
+    padding-top: 10px
+    .seo-cards
+      padding-bottom: 20px
+  .home__catalog
+    margin: 0 -10px
+  .home__catalog-shadow
+    padding: 15px 20px
+  .home__catalog-btn
+    width: 229px
+    height: 40px
+    padding: 0 5px
+    svg
+      width: 10.5px
+      height: 7px
+  .home__catalog-search
+    width: calc(100% - 229px)
+    padding-left: 20px
+  .home__search-list
+    width: calc(100% - 115px)
+  .home__catalog-search input
+    width: calc(100% - 95px)
+    @include normal-text
+    padding: 9px 20px
+    &::-webkit-input-placeholder
+      @include normal-text
+    &:-moz-placeholder
+      @include normal-text
+    &::-moz-placeholder
+      @include normal-text
+    &:-ms-input-placeholder
+      @include normal-text
+  .home__catalog-search img
+    width: 12px
+    height: 12px
+  .home__catalog-search .home__search-list
+    width: calc(100% - 95px - 20px)
+    left: 20px
+  .home__catalog-search button
+    width: 95px
+  .home__catalog-list li
+    width: 33.33%
+  .home__catalog-list svg
+    width: 19px
+    height: 19px
+    margin-right: 5px
+  .home__safe, .home__review-left
+    width: 229px
+    margin-right: 20px
+  .home__task, .home__review-overlay
+    width: calc(100% - 229px - 20px)
+  .home__safe-head
+    padding: 20px 10px
+  .home__safe-head img
+    width: 45px
+    height: 45px
+  .home__safe-list
+    padding: 0 5px
+  .home__safe-check
+    padding: 10px 5px
+    align-items: center
+  .home__safe-num
+    font-size: 10px
+    line-height: 13px
+    margin-right: 5px
+  .home__safe-list svg
+    width: 19px
+    height: 19px
+    margin-right: 5px
+  .home__safe-row .text
+    width: calc(100% - 19px - 5px)
+    @include small-text
+  .home__task-row, .home__task-item
+    padding: 5px
+  .home__task-item:before
+    width: calc(100% - 20px)
+  .home__task h4
+    padding-bottom: 5px
+  .home__task-price
+    font-size: 18px
+    line-height: 24px
+  .home__task .text
+    max-width: 334px
+  .home__task-list
+    max-height: 415px
+  .home__review-left .title-18
+    padding: 10px
+  .home__review-left .text
+    @include small-text
+  .home__review-icon
+    width: 32px
+    height: 32px
+    border-radius: 0 5px 5px 0
+    img
+      width: 20px
+      height: 20px
+  .home__review-list
+    padding: 5px 5px 5px 0
+  .home__review-item
+    margin: 0
+    padding: 10px 0
+  .home__review .customer-review
+    max-height: 265px
+  .home__review .masters-foto
+    display: block
+  .home__review, .home__master
+    margin-bottom: 30px
+  .home__safe-footer
+    padding: 10px 5px
+  .home__master-right, .home__mobile-right
+    width: 229px
+    .text
+      @include small-text
+  .home__master-left, .home__mobile-left
+    width: calc(100% - 20px - 229px)
+    margin-right: 20px
+  .home__master-ellipse
+    width: 30px
+    height: 30px
+    &:first-child
+      left: -3px
+      top: -3px
+    &:nth-child(2)
+      right: -3px
+      top: -3px
+    &:nth-child(3)
+      right: -3px
+      bottom: -3px
+    &:nth-child(4)
+      left: -3px
+      bottom: -3px
+  .home__master-ellipse-back
+    width: 25px
+    height: 25px
+  .home__master-img
+    width: 32px
+    height: 32px
+    margin-right: 5px
+  .home__master-list
+    padding: 10px 20px
+  .home__master-item
+    padding: 20px 0
+  .home__master-head
+    padding: 10px
+  .home__master-icon
+    width: 45px
+    height: 45px
+  .home__master-container
+    padding: 20px 10px
+  .home__master-form h2.text
+    line-height: 39px
+  .home__master-form .seo-form-input
+    padding: 10px
+  .home__master-form h2.text
+    left: 10px
+  .home__master-footer
+    padding: 10px
+    text-align: center
+    .text-14
+      @include small-text
+  .home__master-form .seo-form-btn, .home__master-free
+    width: 95px
+  .home__master-form .seo-form-input
+    width: calc(100% - 95px)
+  .home__mobile-right
+    padding: 20px 8px
+  .home__mobile-right .btn-orange
+    margin: 10px auto 0
+  .home__mobile-left
+    padding: 10px 15px
+    background-size: auto 119px
+  .home__mobile-img
+    width: 200px
+    height: 153px
+  .home__mobile-left .text
+    padding-bottom: 10px
+  .home__mobile-btns .btn-blue
+    margin: 10px 10px 0 0
+    line-height: 36px
+    padding: 0 10px
+  .home__mobile-icon
+    width: 16px
+    height: 16px
+  .home__catalog-service
+    width: 50%
+  .home__catalog__wrap
+    padding: 20px 10px 0
+  .home__catalog__wrap.active
+    height: calc(100vh - 70px)
+  .home__catalog-right
+    padding: 5px 20px
+    width: calc(100% - 229px)
+  .home__catalog-left
+    width: 229px
+  .home__catalog-service-name
+    padding-bottom: 10px
+  .home__master-enter .text:before
+    left: calc(100% + 5px)
+    top: 7px
+    background: url("../img/arrow.svg") no-repeat center/26px 31px
+    width: 26px
+    height: 31px
+    transform: rotate(90deg)
+  .home__mobile-right .btn-orange
+    min-width: 150px
+  .home__catalog-shadow.active
+    @include container
+    border-radius: 5px 5px 0 0
+    input
+      background: #F5F6FA
+  .home__safe-footer
+    br
+      display: none
 @media only screen and (max-width : 767px)
   .range-slider-row
     margin-top: 0
@@ -2135,6 +2383,231 @@
   .masters .swiper-slide
     .slide
       min-width: auto
+  .home__search
+    margin: 0 -15px
+    background: #F5F6FA
+    border-radius: 0 0 5px 5px
+    padding: 0
+  .home__title
+    @include text
+    color: $lv7
+    font-family: "SegoeUI-SemiBold", sans-serif
+    span
+      @include small-text
+    a
+      color: $lv7
+      font-family: "SegoeUI-Bold", sans-serif
+  .home__search-top
+    background: url("../img/service-search-img-mobi.jpg") no-repeat center / cover
+    padding: 20px
+  .home__search-form
+    width: 100%
+  .home__search-input
+    @include small-text
+    padding: 9px 10px
+    width: calc(100% - 35px)
+    height: 35px
+    &::-webkit-input-placeholder
+      @include small-text
+    &:-moz-placeholder
+      @include small-text
+    &::-moz-placeholder
+      @include small-text
+    &:-ms-input-placeholder
+      @include small-text
+  .home__search-submit
+    width: 35px
+    height: 35px
+    color: transparent
+    background: #FFC501 url("../img/magnifier-black.svg") no-repeat center / 12px 12px
+  .home__steps
+    margin: 0
+    padding: 20px 20px 10px 20px
+    br
+      display: none
+  .home__steps-row
+    width: 100%
+    margin-bottom: 10px
+  .home__steps-num
+    font-size: 17px
+    line-height: 1
+  .home__steps-row:first-child:before
+    left: 40px
+    bottom: 100%
+  .home__catalog-btn, .home__catalog-search
+    width: 100%
+  .home__catalog-search
+    padding: 20px 0 0 0
+  .home__catalog-search button
+    width: 35px
+    span
+      display: none
+    img
+      margin: 0
+  .home__catalog-search input
+    width: calc(100% - 35px)
+  .home__catalog-list li
+    width: 100%
+    padding: 10px
+    &:nth-child(n+7)
+      display: none
+    &.active
+      &:nth-child(n+7)
+        display: flex
+  .home__catalog-drop
+    display: block
+  .home__cards, .home__safe__task
+    margin: 20px 0 30px
+  .home__catalog-shadow
+    padding: 20px 10px
+  .home__safe
+    width: 100%
+    margin: 0 auto 30px
+  .home__task
+    width: calc(100% + 20px)
+    margin: 0 -10px
+  .home__head .title-18
+    display: block
+  .home__task-list
+    max-height: 282px
+  .home__task h4, .home__task-price, .home__task .text, .home__task .text-14
+    @include small-text
+  .home__task-info
+    flex-direction: column-reverse
+    align-items: start
+  .home__task .text
+    max-width: 100%
+    padding: 5px 0 0 0
+  .home__review-left
+    width: 100%
+    margin: 0 auto 30px
+    max-width: 275px
+  .home__review-overlay
+    width: 100%
+  .home__review .customer-review
+    max-height: 320px
+  .home__review .masters-foto
+    margin-right: 10px
+  .home__master-left
+    width: 100%
+    margin: 0 0 30px 0
+  .home__master-right
+    width: 100%
+  .home__master-icon
+    width: 40px
+    height: 40px
+    margin-right: 10px
+  .home__master-head span, .home__master-enter .text, .home__master-form h2.text, .home__master-form .seo-form-input, .home__mobile-left .text
+    @include small-text
+  .home__master-form .seo-form-input
+    width: calc(100% - 35px)
+    height: 35px
+    &::-webkit-input-placeholder
+      @include small-text
+      color: #6C7185
+    &:-moz-placeholder
+      @include small-text
+    &::-moz-placeholder
+      @include small-text
+    &:-ms-input-placeholder
+      @include small-text
+  .home__master-form .seo-form-btn
+    width: 35px
+    height: 35px
+  .home__master-free
+    width: auto
+  .home__master-enter .text:before
+    background-size: 22px 27px
+    top: 5px
+  .home__master-footer
+    padding: 5px 40px
+  .home__master-list
+    padding: 0 20px
+  .home__mobile
+    margin-bottom: 30px
+  .home__mobile-left
+    width: calc(100% + 20px)
+    margin: 0 -10px 30px
+    padding: 10px 20px
+    background-size: auto 100px
+  .home__mobile-img
+    width: 224px
+    height: 100%
+    right: -50px
+    bottom: -10px
+  .home__mobile-btns .btn-blue
+    line-height: 30px
+    background: linear-gradient(107.64deg, #4880FF 0.21%, #6694FE 100%)
+  .home__mobile-icon
+    width: 13px
+    height: 13px
+  .home__mobile-btns .btn-blue
+    margin-top: 0
+  .home__mobile-right
+    width: 100%
+    min-height: 163px
+    padding: 20px 40px
+  .home__mobile-right .title-18
+    @include text
+  .home
+    overflow: hidden
+  .home__cards
+    box-shadow: $shadow-active
+    .seo-card
+      padding: 0 10px
+  .home__catalog-left, .home__catalog-right
+    width: 100%
+    padding: 0
+    flex-wrap: wrap
+    display: flex
+    position: absolute
+    left: 0
+    top: 0
+    background: $lv7
+  .home__catalog-right-overflow
+    padding: 0 0 20px 0
+  .home__catalog-left
+    direction: ltr
+    padding: 12.5px 10px
+    li
+      width: 50%
+      height: fit-content
+      padding: 7.5px 10px
+      @include small-text
+      &.active
+        background: transparent
+  .home__catalog__wrap
+    display: flex
+    padding: 0
+    overflow: hidden
+    background: $lv7
+  .home__catalog__wrap.active
+    height: calc(100vh - 139px)
+  .home__catalog-right
+    left: 100%
+    overflow: hidden
+    height: 100%
+  .home__back
+    display: flex
+  .home__catalog-service
+    padding: 10px 0 10px 20px
+  .home__catalog-service-name
+    @include small-text
+    padding-bottom: 15px
+  .home__catalog-service .text
+    @include small-text
+    margin-bottom: 15px
+  .home__master-form h2.text
+    line-height: 36px
+  .home__safe-footer
+    br
+      display: block
+  .home__search-list, .home__catalog-search .home__search-list
+    width: calc(100% - 35px)
+    left: 0
+    padding: 10px
+    .text
+      @include small-text
 @media screen and (max-width: 500px)
   //MESSAGES, WHAT`S NEW
   .messages

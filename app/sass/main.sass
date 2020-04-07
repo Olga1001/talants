@@ -827,12 +827,12 @@ select
   font-weight: bold
   font-size: 22px
   line-height: 29px
-  color: #3D404C
+  color: $lv1
 .text-14
   font-family: "SegoeUI", sans-serif
   font-size: 14px
   line-height: 19px
-  color: #3D404C
+  color: $lv1
   &-link
     position: relative
     &:before
@@ -842,20 +842,20 @@ select
       bottom: 0
       width: 100%
       height: 1px
-      background: #3D404C
+      background: $lv1
 .title-18
   font-family: "SegoeUI-Bold", sans-serif
   font-size: 18px
   line-height: 24px
-  color: #3D404C
+  color: $lv1
 .green
-  color: #33C093
+  color: $lv5
 .orange
   color: #FF855F
 .blue
   color: #487FFE
 .gray
-  color: #3D404C
+  color: $lv1
 .swiper-arrow
   margin-left: 10px
   transition: all 0.25s ease
@@ -876,7 +876,7 @@ select
   display: block
 .swiper-prev
   border-radius: 5px 0px 0px 5px
-  background: #6C7185 url("../img/prev.svg") no-repeat center / 15px 100%
+  background: $lv2 url("../img/prev.svg") no-repeat center / 15px 100%
   right: 45px
 .swiper-next
   border-radius: 0px 5px 5px 0px
@@ -1046,28 +1046,29 @@ select
   width: 30px
   height: 30px
   top: -40px
-  left: calc(50% + 545px)
+  right: -50px
   font-size: 0
   opacity: 1
   padding: 0
   -webkit-transform: translate(-50%)
   -ms-transform: translate(-50%)
   transform: translate(-50%)
-  background-image: url("data:image/svg+xmlcharset=utf-8,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M17.653 15L29.45 3.205A1.875 1.875 0 1026.797.55L15 12.348 3.203.55A1.875 1.875 0 10.55 3.204L12.347 15 .55 26.798a1.875 1.875 0 102.653 2.652L15 17.653 26.797 29.45c.367.367.847.55 1.327.55s.96-.183 1.326-.55a1.875 1.875 0 000-2.653L17.653 15.001z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h30v30H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+  background-image: url("../img/mfp-close.svg")
   background-size: contain
 .mfp-arrow.mfp-arrow-right
   left: calc(50% + 545px)
   -webkit-transform: translate(-50%,-50%)
   -ms-transform: translate(-50%,-50%)
   transform: translate(-50%,-50%)
-  background-image: url("data:image/svg+xmlcharset=utf-8,%3Csvg width='40' height='40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M30.58 21.98L13.38 39.18a2.8 2.8 0 11-3.961-3.961L24.638 20 9.419 4.782A2.802 2.802 0 0113.381.82l17.2 17.199A2.79 2.79 0 0131.4 20c0 .717-.274 1.433-.821 1.98z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h40v40H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+  background-image: url("../img/mfp-arrow.mfp-arrow-right.svg")
+
   background-size: contain
 .mfp-arrow.mfp-arrow-left
   left: calc(50% - 545px)
   -webkit-transform: translate(-50%,-50%)
   -ms-transform: translate(-50%,-50%)
   transform: translate(-50%,-50%)
-  background-image: url("data:image/svg+xmlcharset=utf-8,%3Csvg width='40' height='40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M9.42 18.02L26.62.82a2.8 2.8 0 113.961 3.961L15.362 20l15.219 15.218a2.802 2.802 0 01-3.962 3.961L9.42 21.98A2.791 2.791 0 018.6 20c0-.717.274-1.433.821-1.98z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath transform='rotate(-180 40 40)' fill='%23fff' d='M40 40h40v40H40z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
+  background-image: url("../img/mfp-arrow.mfp-arrow-left.svg")
   background-size: contain
 .mfp-arrow.mfp-arrow-left, .mfp-arrow.mfp-arrow-right
   opacity: 1
@@ -1809,6 +1810,7 @@ button.mfp-close:hover
 @import "../components/pages/settings/style"
 @import "../components/pages/tasklist/style"
 @import "../components/pages/feedback/style"
+@import "../components/pages/home/style"
 .show-tablet, .show-mob
   display: none
 @import "media"
